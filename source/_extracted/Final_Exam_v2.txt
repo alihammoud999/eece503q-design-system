@@ -1,0 +1,204 @@
+
+
+--- PAGE 1 ---
+FINAL EXAMINATION — VERSION B
+DevOps, IaC, Kubernetes & Web Application Security
+Date: May 14, 2026   |   Duration: 3 Hours   |   Total Marks: 100
+Instructions: Answer ALL questions. Part A contains 20 MCQs (40 marks). Part B contains 12
+short-answer questions (60 marks). Be precise — full marks require specific terminology, not vague
+descriptions. Code identifiers, command names, and configuration keys must be spelled correctly.
+PART A — MULTIPLE CHOICE QUESTIONS (40 marks · 2 marks
+each)
+1. In a Dockerfile, which instruction sets the working directory inside the container
+for subsequent RUN, CMD, COPY, and ENTRYPOINT instructions?
+A) CHDIR
+B) WORKDIR
+C) SETDIR
+D) PATH
+2. A Pod manifest declares kind: Pod and apiVersion: v1. Inside
+spec.containers, you set image: nginx:latest. What does :latest guarantee?
+A) The most recent stable production release
+B) The image tagged 'latest' in the registry — not necessarily the newest version
+C) The image will auto-update whenever a new version exists
+D) The image is digitally signed by Docker
+3. In Terraform, a variable declared with sensitive = true will:
+A) Encrypt the variable value in the state file
+B) Prevent the value from being logged during plan and apply
+C) Block the variable from being set via the CLI
+D) Require multi-factor authentication to apply changes
+4. A Kubernetes Service of type NodePort exposes the service on each Worker Node
+within which port range by default?
+A) 1024–8080
+B) 8000–9000
+C) 30000–32767
+D) 80–443
+5. Which OWASP vulnerability is BEST illustrated by injecting & ping -c 10
+attacker.com & into a parameter that gets passed to a shell command?
+A) SQL Injection
+B) Cross-Site Scripting (XSS)
+C) OS Command Injection
+D) Server-Side Request Forgery (SSRF)
+
+
+--- PAGE 2 ---
+6. In the OWASP Password Storage Cheat Sheet, what is the PRIMARY purpose of a
+salt?
+A) Make hashes harder to compute (slower)
+B) Encrypt the password reversibly
+C) Ensure identical passwords produce different hashes, defeating precomputed (rainbow) tables
+D) Reduce the size of stored hashes
+7. Terraform's aws_launch_configuration resource has a known limitation that
+motivates a specific lifecycle pattern. Which one?
+A) It cannot reference variables
+B) Launch configurations are immutable; replacing one referenced by an ASG requires
+create_before_destroy
+C) It does not support tags, so it must use ignore_changes
+D) It cannot be used with t2.micro instance types
+8. Which Kubernetes component on the control plane assigns newly created Pods to
+Worker Nodes?
+A) kubelet
+B) kube-proxy
+C) Scheduler
+D) Controller Manager
+9. In Terraform, the syntax data.aws_vpc.default.id refers to:
+A) The ID attribute of a resource named 'default' of type aws_vpc
+B) The ID attribute of a data source named 'default' of type aws_vpc
+C) A module output called default.id
+D) A local variable defined in defaults.tf
+10. An attacker submits filename=../../../etc/passwd in a URL parameter and
+successfully reads the file. This is an example of:
+A) SSRF
+B) Path Traversal (Directory Traversal)
+C) File Upload Vulnerability
+D) Open Redirect
+11. Which Kubernetes object is responsible for ensuring a stable set of pod replicas
+is running at any given time, by monitoring desired vs. current state?
+A) DaemonSet
+B) StatefulSet
+C) ReplicaSet
+D) Job
+12. A Terraform backend configured for S3 with a DynamoDB table serves two
+purposes. Which pair is correct?
+
+
+--- PAGE 3 ---
+A) Compute caching and credential storage
+B) Remote state storage (S3) and state locking (DynamoDB)
+C) Log aggregation (S3) and metrics (DynamoDB)
+D) Module registry (S3) and provider cache (DynamoDB)
+13. In a CI/CD pipeline, the distinction between Continuous Delivery and Continuous
+Deployment is:
+A) Delivery uses Docker; Deployment uses Kubernetes
+B) Delivery requires manual approval to release to production; Deployment releases automatically
+C) Delivery is for backend; Deployment is for frontend
+D) They are synonymous and interchangeable
+14. A Kubernetes Secret stores sensitive values. By default, the data in a Secret
+manifest is:
+A) Encrypted with AES-256
+B) Encrypted with the cluster's TLS private key
+C) Base64 encoded (NOT encrypted)
+D) Stored as plain text
+15. Which Terraform expression correctly references the public IP of an EC2 instance
+resource named 'web' in an output block?
+A) ${resource.aws_instance.web.public_ip}
+B) aws_instance.web.public_ip
+C) var.aws_instance.web.public_ip
+D) data.aws_instance.web.public_ip
+16. In Cross-Site Scripting (XSS), the attacker's malicious script runs in the victim's
+browser. Why is the script trusted by the browser?
+A) The browser trusts all JavaScript by default
+B) The script came from a website the user has visited before
+C) The script appears to originate from the trusted target website's domain
+D) Browsers cannot detect malicious code
+17. Which of these is NOT a Kubernetes health-check probe type?
+A) Liveness probe
+B) Readiness probe
+C) Startup probe
+D) Heartbeat probe
+18. Why is Docker fundamentally lighter than a Virtual Machine on the same host?
+A) Docker images are always smaller than 100 MB
+B) Containers share the host OS kernel; VMs each run a full guest OS
+C) Docker uses GPU acceleration
+D) VMs cannot run Linux
+
+
+--- PAGE 4 ---
+19. In Terraform, the terraform init command primarily does which of the
+following?
+A) Applies the infrastructure changes
+B) Downloads provider plugins and initializes the backend
+C) Destroys the existing infrastructure
+D) Validates the syntax of .tf files only
+20. An application checks access permissions in an upstream component (e.g.,
+reverse proxy), but the backend service trusts any request from 127.0.0.1. An
+attacker exploits this trust by forcing the server to make a request to its own admin
+endpoint. This attack is:
+A) Broken Access Control via SSRF
+B) Session Hijacking
+C) CSRF (Cross-Site Request Forgery)
+D) DNS poisoning
+
+
+--- PAGE 5 ---
+PART B — SHORT ANSWER QUESTIONS (60 marks · 5 marks each)
+Keep answers concise. 3–6 sentences each, unless code is requested.
+1. Given this Dockerfile snippet, identify TWO mistakes and explain how to fix each:
+FROM python:3.11-slim
+COPY . .
+RUN pip install -r requirements.txt
+WORKDIR /app
+CMD python app.py
+[5 marks]
+2. A developer claims: "Our CI pipeline runs unit tests on every commit, so we have
+CI/CD." Is this statement accurate? Explain what is missing for true CI/CD and define
+the boundary between CI, Continuous Delivery, and Continuous Deployment.
+[5 marks]
+3. Describe what happens, step by step, when you run kubectl apply -f
+deployment.yaml for a new Deployment with replicas: 3. Mention at least the API
+server, etcd, scheduler, and kubelet roles.
+[5 marks]
+4. Explain the DRY violation in the following Terraform snippet and rewrite it correctly
+using a variable:
+resource "aws_security_group" "sg" {
+  ingress { from_port = 8080; to_port = 8080; ... }
+}
+resource "aws_instance" "web" {
+  user_data = "busybox httpd -p 8080"
+}
+[5 marks]
+5. An attacker injects ' OR '1'='1' -- into a login form's username field. Show the
+resulting SQL query (given the original was SELECT * FROM users WHERE
+username='[input]' AND password='[input]') and explain precisely WHY the
+attacker is authenticated without knowing the password.
+[5 marks]
+6. Compare a ConfigMap and a Secret in Kubernetes. Give one valid use case for
+each, and explain why you should NOT store database passwords in a ConfigMap.
+[5 marks]
+7. In Terraform, what is the difference between an implicit dependency and an explicit
+dependency? Provide a one-line code example of each.
+[5 marks]
+8. Define SSRF and explain how it bypasses access controls when the application
+implicitly trusts requests from localhost or 127.0.0.1. Give one mitigation.
+[5 marks]
+9. The OWASP Password Storage Cheat Sheet recommends combining salting with a
+work factor. Explain what each does, and why using ONLY salting (without a slow
+
+
+--- PAGE 6 ---
+hashing algorithm) is insufficient against modern GPU-based attacks.
+[5 marks]
+10. You discover that terraform.tfstate contains a plaintext database password
+in a team Git repository. List THREE concrete remediation steps you would take, in
+order of priority.
+[5 marks]
+11. Explain the role of an Ingress Controller in Kubernetes. Why might you choose an
+NGINX-based Ingress over creating one LoadBalancer Service per microservice in a
+system with 20 microservices?
+[5 marks]
+12. A web application encrypts credit card numbers in the database but decrypts
+them automatically on every query. A SQL injection vulnerability is then discovered.
+Explain why the encryption did NOT protect the data, and describe TWO design
+changes that would have prevented exposure.
+[5 marks]
+— END OF EXAMINATION —
+Review your answers before submitting. Partial credit is awarded for partial reasoning. Good luck.

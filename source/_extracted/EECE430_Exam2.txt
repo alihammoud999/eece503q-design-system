@@ -1,0 +1,307 @@
+EECE 430 — Software Engineering
+Final Examination — Practice Exam 2
+Name: ____________________________________ Date: ___________________
+Student ID: _______________________________ Section: _________________
+Instructions:
+• This exam contains 33 multiple-choice questions.
+• Time allowed: 1 hour.
+• Circle the letter of the best answer for each question.
+• Each question is worth equal marks.
+• No electronic devices, notes, or textbooks are permitted.
+1. The Agile Manifesto states that while there is value in processes and tools, which of the following is
+valued MORE?
+A) Comprehensive documentation
+B) Contract negotiation
+C) Individuals and interactions
+D) Following a plan
+2. A developer practicing TDD writes a test, runs it, and it passes immediately without writing any new
+code. What does this most likely indicate?
+A) The TDD process is working perfectly
+B) The functionality already exists or the test is flawed and does not properly validate the new requirement
+C) The developer should move on to refactoring
+D) The test framework has a bug
+3. Which of the following is TRUE about agile method applicability?
+A) Agile is best suited for large systems with strict regulatory requirements
+B) Agile works well for small/medium-sized products and custom systems where the customer is
+committed to involvement
+C) Agile requires that all requirements be fully specified before development begins
+D) Agile eliminates the need for any software architecture planning
+4. What is the primary purpose of Lo-Fi UI sketches and storyboards in agile development?
+A) To replace the need for any user interface coding
+B) To create final production-ready designs
+C) To get customer participation in UI design and show interactivity without building a prototype, since
+they are easier to change than code
+D) To document the system architecture
+5. In agile estimation using the Fibonacci scale, a user story estimated at 25 or more points should
+typically be:
+A) Assigned to the most experienced developer
+B) Divided into simpler, smaller user stories
+C) Moved to the bottom of the product backlog
+D) Estimated again using a linear scale instead
+6. Which of the following BEST describes the role of the Product Owner in Scrum?
+A) Writing code and conducting code reviews
+B) Identifying product features, prioritizing them, and continuously reviewing the product backlog
+C) Facilitating daily stand-up meetings and removing impediments
+
+-- 1 of 7 --
+
+D) Deciding the technical architecture of the system
+7. A Scrum team discovers during sprint execution that a critical PBI cannot be completed. According
+to Scrum principles, what should happen?
+A) The sprint should be extended by one week
+B) The ScrumMaster should complete the PBI personally
+C) The unfinished PBI is returned to the product backlog and queued for a future sprint
+D) The entire sprint is cancelled and restarted
+8. In XP, what does 'sustainable pace' mean?
+A) Developers should work at maximum speed at all times
+B) Large amounts of overtime are not acceptable as the net effect reduces code quality and medium-term
+productivity
+C) Each sprint must be completed faster than the previous one
+D) Only senior developers should set the pace of development
+9. Which of the following correctly lists the four product backlog activities?
+A) Planning, coding, testing, deploying
+B) Refinement, estimation, prioritization, creation
+C) Sprint planning, sprint execution, sprint review, sprint retrospective
+D) Requirements gathering, design, implementation, maintenance
+10. Why does Scrum recommend an ideal team size of 5-8 people?
+A) Larger teams require less management overhead
+B) It is large enough to be diverse in skills yet small enough to communicate informally and effectively
+C) Smaller teams cannot handle any meaningful workload
+D) It matches the number of Scrum ceremonies
+11. Which architectural design issue arises when a system needs to support a rapidly changing number
+of users?
+A) Software reuse
+B) Software compatibility
+C) The architecture must be designed so the system can be scaled up and down
+D) Product lifetime
+12. A system requires both high availability and redundancy. Which architectural approach addresses
+this, and what is its trade-off?
+A) Layered architecture — trade-off is reduced security
+B) Including redundant components and fault tolerance mechanisms — trade-off is increased
+development cost, complexity, and potential for bugs
+C) Pipe and filter — trade-off is slower data processing
+D) MVC pattern — trade-off is more complex user interfaces
+13. In the MVC pattern, what happens when the data in the Model changes?
+A) The Controller must be rewritten to handle the new data format
+B) The change can be reflected in all Views, supporting multiple presentations of the same data
+C) The View must be completely redesigned
+D) The Model is discarded and a new one is created
+14. A transaction processing system handles user requests to query and update a database. According
+to the course, which component acts as an intermediary between user input and the database?
+A) The pipe and filter component
+B) The transaction manager, which sits between the application processing logic and the database
+C) The API gateway
+D) The service registry
+15. Which statement about cross-cutting concerns in a layered architecture is CORRECT?
+
+-- 2 of 7 --
+
+A) Cross-cutting concerns only affect the top layer of the architecture
+B) Security is NOT a cross-cutting concern because it only applies to the database layer
+C) Cross-cutting concerns affect all layers, creating interactions between them, which is why adding
+security post-design is difficult
+D) Cross-cutting concerns can be eliminated by using the MVC pattern
+16. What is the key difference between IaaS and PaaS?
+A) IaaS provides complete software applications; PaaS provides only hardware
+B) IaaS provides infrastructure services like compute, network, and storage for virtual servers; PaaS
+provides libraries, frameworks, and database access on top of that
+C) PaaS requires you to manage the operating system; IaaS does not
+D) IaaS and PaaS are identical but offered by different cloud vendors
+17. In a multi-tenant SaaS system, a software bug causes data belonging to Company A to become
+visible to Company B. This vulnerability is a consequence of:
+A) Using a multi-instance database architecture
+B) Logical isolation via tenant identifiers rather than physical isolation, meaning a single bug can expose
+all tenants' data
+C) Encrypting data at rest
+D) Using container-based deployment
+18. Which of the following is a benefit of SaaS for the SOFTWARE PROVIDER (not the customer)?
+A) No upfront costs for software or servers
+B) Mobile, laptop, and desktop access
+C) Update management — the provider controls updates and all customers receive them simultaneously
+D) Reduced software management costs for the customer
+19. A company wants to avoid vendor lock-in and ensure their cloud application can survive the failure
+of a single cloud provider. Which cloud deployment model should they choose?
+A) Private Cloud
+B) Public Cloud
+C) Hybrid Cloud
+D) Multi-Cloud
+20. What is the PRIMARY advantage of using containers over VMs for implementing cloud-based
+multi-instance systems?
+A) Containers provide stronger hardware-level isolation
+B) Containers run different operating systems more effectively
+C) Containers are much smaller (megabytes vs gigabytes), start in seconds, and use fewer resources
+since they share the host OS kernel
+D) Containers are more secure because each has its own hypervisor
+21. Which of the following is NOT one of the three core DevOps principles?
+A) Everyone is responsible for everything
+B) Everything that can be automated should be automated
+C) Separate teams should handle development, testing, and operations independently
+D) Measure first, change later
+22. In Git, a developer creates a branch, makes changes, and wants to merge back to the master. Both
+the developer and another team member have modified the same lines in the same file. What happens?
+A) Git automatically keeps the most recent change
+B) Git signals a merge conflict and the developers must resolve it together
+C) Git rejects the merge permanently and the branch must be deleted
+D) Git creates a third version that combines both changes automatically
+23. What problem does continuous delivery solve that continuous integration alone does not?
+
+-- 3 of 7 --
+
+A) Continuous delivery runs unit tests, which CI does not
+B) Continuous delivery tests the system in a production-replica environment, catching bugs that only
+appear in the real operational environment
+C) Continuous delivery replaces the need for version control
+D) Continuous delivery eliminates the need for automated testing
+24. Configuration management tools like Puppet and Chef are used in Infrastructure as Code to:
+A) Write application source code automatically
+B) Automatically install software and services on servers according to the infrastructure definition, and
+push updates consistently
+C) Replace the need for a code management system like Git
+D) Monitor application performance in production
+25. A/B testing, as described in the context of continuous deployment, involves:
+A) Testing two completely different applications against each other
+B) Deploying a new version on some servers while keeping the old version on others, then comparing
+how customers use each
+C) Running automated tests in two separate environments simultaneously
+D) Having two developers independently test the same feature
+26. Why are ACID transactions considered impractical in a microservices architecture?
+A) Microservices do not use databases
+B) ACID transactions require bundling updates into a single unit, which is impractical unless all data is
+confined to a single microservice
+C) ACID transactions are too fast for microservices to handle
+D) Microservices only support NoSQL databases which do not support any transactions
+27. A photo printing service uses an API gateway between the mobile app and its microservices. Which
+of the following is NOT a benefit of using an API gateway?
+A) The app does not need to know what communication protocol the microservices use
+B) It is possible to split or combine services without affecting the client app
+C) It eliminates the need for authentication in individual microservices
+D) It acts as a single point of contact that translates app requests into microservice calls
+28. Which decomposition guideline states that elements likely to be changed at the same time should
+be located within the same microservice?
+A) Single responsibility principle
+B) Common closure principle
+C) Business capability association
+D) Data isolation principle
+29. A microservices system experiences an external service failure where a critical service becomes
+unresponsive. The simplest way to report this type of failure to calling services is by using:
+A) Custom binary error protocols
+B) Email notifications to the development team
+C) HTTP status codes indicating whether the request succeeded or failed
+D) Writing error messages to a shared log file that all services monitor
+30. A user clicks a link in a phishing email that leads to a fake website designed to collect their login
+credentials. This type of attack exploits which weakness of password-based authentication?
+A) Insecure passwords
+B) Password reuse
+C) Phishing attacks — users are tricked into entering credentials on fraudulent sites
+D) Forgotten password recovery mechanisms
+
+-- 4 of 7 --
+
+31. A Key Management System (KMS) must maintain multiple timestamped versions of encryption keys.
+What is the primary reason for this requirement?
+A) To allow different users to use different keys simultaneously
+B) Because encryption keys should be changed regularly, and archived data encrypted with older keys
+must still be decryptable
+C) To speed up the encryption process by rotating keys
+D) To comply with open-source licensing requirements
+32. Which combination of defensive measures BEST protects against session hijacking?
+A) Long session timeouts and unencrypted HTTP connections
+B) Traffic encryption (HTTPS), short session timeouts, and multi-factor authentication
+C) Disabling cookies entirely and using only GET requests
+D) Allowing unlimited login attempts and storing passwords in plain text
+33. According to the GDPR requirements discussed in the course, software companies must:
+A) Hide their privacy policy in a long terms-and-conditions document
+B) Include a summary of their privacy policy written in plain language on their website
+C) Only collect data from users who are software engineers
+D) Store all user data indefinitely regardless of account status
+— END OF QUESTIONS —
+
+-- 5 of 7 --
+
+EECE 430 — Practice Exam 2 — Answer Key
+Quick Reference:
+Q Ans Q Ans Q Ans
+1. C 2. B 3. B
+4. C 5. B 6. B
+7. C 8. B 9. B
+10. B 11. C 12. B
+13. B 14. B 15. C
+16. B 17. B 18. C
+19. D 20. C 21. C
+22. B 23. B 24. B
+25. B 26. B 27. C
+28. B 29. C 30. C
+31. B 32. B 33. B
+Detailed Explanations:
+1. C — The Agile Manifesto explicitly values individuals and interactions over processes and tools.
+2. B — In TDD, a new test should fail initially. If it passes without new code, either the functionality already
+exists or the test is not correctly checking the new requirement.
+3. B — Agile is suited for small/medium products for sale and custom systems with customer commitment
+and few external regulations.
+4. C — Lo-Fi UI sketches help customers participate in design. They are less intimidating, easier to change,
+and focus on interaction rather than visual polish.
+5. B — Stories estimated at 25+ are too complex. The team should divide them into simpler stories that can
+be estimated and implemented more reliably.
+6. B — The Product Owner identifies features, prioritizes requirements, and continuously reviews the product
+backlog.
+7. C — Sprints are timeboxed and never extended. Unfinished items go back to the product backlog for future
+sprints.
+8. B — Sustainable pace means no excessive overtime, as it reduces code quality and productivity in the
+medium term.
+9. B — The four backlog activities are: refinement (analyze/refine PBIs), estimation (assess effort),
+prioritization (reorder), and creation (add new items).
+10. B — 5-8 is large enough for skill diversity but small enough for effective informal communication. Teams
+are self-organizing and take collective responsibility.
+11. C — When user numbers change quickly, the architecture must support scaling. This is the 'number of
+users' design issue.
+12. B — Availability requires redundant components and fault tolerance. The trade-off is added complexity,
+cost, and increased chance of bugs/vulnerabilities.
+13. B — MVC allows data to change independently of representation. Changes in one representation are
+shown in all Views.
+
+-- 6 of 7 --
+
+14. B — Transaction processing systems use: I/O processing -> application logic -> transaction manager ->
+database.
+15. C — Cross-cutting concerns like security affect ALL layers. Distributing them across layers creates
+inter-layer dependencies, making post-design changes difficult.
+16. B — IaaS provides infrastructure (compute, network, storage). PaaS adds libraries, frameworks, and
+services like databases on top of infrastructure.
+17. B — Multi-tenant systems use logical isolation (tenant IDs). A single bug or breach can expose all
+tenants' data — this is a known disadvantage.
+18. C — Update management is a provider benefit: they control updates, all customers get them at the same
+time, reducing maintenance of multiple versions.
+19. D — Multi-cloud uses multiple cloud providers, avoiding data lock-in and single points of failure. But you
+must handle API differences and cross-cloud migration.
+20. C — Containers are smaller, start faster, and share the host OS kernel, making them more
+resource-efficient than VMs.
+21. C — DevOps eliminates separate teams. The three principles are: everyone responsible for everything,
+automate everything, measure first change later.
+22. B — When the same lines are changed in different branches, Git signals a conflict. Developers must
+collaborate to resolve it manually.
+23. B — CI builds and tests on the dev machine. CD additionally tests in a production-replica (staged)
+environment, catching environment-specific bugs.
+24. B — CM tools like Puppet/Chef read infrastructure models and automatically provision servers, install
+software, and push changes consistently.
+25. B — A/B testing deploys new version on some servers, old on others, and diverts customers to compare
+feature usage and effectiveness.
+26. B — ACID bundles updates into one atomic unit. This is impractical across microservices since each has
+its own database — you'd need distributed transactions.
+27. C — The API gateway does NOT eliminate the need for authentication in individual services. It insulates
+the client, handles routing, and enables service decomposition changes.
+28. B — The common closure principle: elements that change together should be in the same service, so
+most new requirements affect only one service.
+29. C — The simplest way to report microservice failures is using HTTP status codes, which indicate success
+or failure of requests.
+30. C — Phishing attacks trick users into clicking fake links and entering credentials on fraudulent sites that
+mimic legitimate ones.
+31. B — Keys are changed regularly for security. Archived data may use older keys, so KMS must keep
+timestamped versions to decrypt backups/archives when needed.
+32. B — HTTPS prevents traffic monitoring for cookies, short timeouts limit the window of attack, and MFA
+confirms identity for sensitive actions.
+33. B — GDPR requires a plain-language summary of the privacy policy on the website, not buried in long
+legal documents that nobody reads.
+— END OF ANSWER KEY —
+
+-- 7 of 7 --
+

@@ -1,0 +1,147 @@
+
+
+--- PAGE 1 ---
+COMPREHENSIVE FINAL EXAMINATION
+DevOps, Cloud Infrastructure, Kubernetes & Web Security
+Date: May 13, 2026 | Duration: 3 Hours | Total Marks: 100
+Instructions: This exam contains 15 Multiple Choice Questions (30 marks) and 10 Short Answer
+Questions (70 marks). Answer all questions. For MCQs, select the best answer. For short answers,
+provide concise and precise responses.
+PART A: MULTIPLE CHOICE QUESTIONS (30 marks - 2 marks each)
+1. In Kubernetes, what is the smallest deployable unit that can be managed?
+A) Container
+B) Pod
+C) Deployment
+D) ReplicaSet
+2. Which Terraform command checks the state file and determines what changes are
+needed WITHOUT applying them?
+A) terraform validate
+B) terraform apply
+C) terraform plan
+D) terraform init
+3. In SQL Injection attacks using the UNION keyword, why is NULL commonly used in
+the initial testing phase?
+A) It's faster to process
+B) It's type-flexible and can fit into any column
+C) It bypasses database validation
+D) It reduces server load
+4. What does the 'create_before_destroy' lifecycle setting in Terraform accomplish?
+A) Deletes old resources before creating new ones
+B) Creates replacement resources first, then deletes old ones
+C) Prevents resource deletion
+D) Schedules resource updates
+5. In a Kubernetes cluster, what is the role of ETCD?
+A) Schedule containers on nodes
+B) Execute containers
+C) Store cluster state and configuration data
+D) Manage network policies
+6. Which type of Kubernetes Service exposes an application externally using a cloud
+provider's load balancer?
+
+
+--- PAGE 2 ---
+A) ClusterIP
+B) NodePort
+C) LoadBalancer
+D) ExternalName
+7. What is the primary difference between CI and CD in a CI/CD pipeline?
+A) CI deploys to production while CD tests locally
+B) CI automates testing and integration; CD automates deployment
+C) CI and CD are the same thing
+D) CI is for development; CD is for operations
+8. In Web Application Security, what does SSRF stand for and what is its primary
+risk?
+A) Server-Side Resource Failure; causes application crashes
+B) Server-Side Request Forgery; allows attackers to make requests from the server
+C) Secure Server Response Format; relates to encryption
+D) Stateless Session Request Framework; relates to session handling
+9. Which of the following is NOT a core DevOps principle?
+A) Automation of the software development lifecycle
+B) Collaboration and communication
+C) Manual testing before deployment
+D) Continuous improvement and minimization of waste
+10. What is the purpose of a Kubernetes Liveness Probe?
+A) Determine if a pod is ready to receive traffic
+B) Determine if a pod should be restarted
+C) Monitor pod memory usage
+D) Control pod scheduling
+11. In Terraform, what is the purpose of the 'terraform state' file?
+A) Define infrastructure configuration
+B) Track the current state of managed resources
+C) Store sensitive credentials
+D) Document best practices
+12. Which OWASP vulnerability involves attackers uploading malicious files to a web
+server?
+A) Path Traversal
+B) Cross-Site Scripting
+C) File Upload Vulnerability
+D) SQL Injection
+
+
+--- PAGE 3 ---
+13. What is the relationship between containers and virtual machines?
+A) Containers replace VMs entirely
+B) Containers share OS kernel; VMs have separate OS instances
+C) VMs are lightweight; containers are heavy
+D) They are functionally identical
+14. In Terraform, which data source allows you to retrieve information from AWS
+without creating resources?
+A) resource
+B) module
+C) data
+D) output
+15. What does the 'restrictive access' principle suggest in cryptographic key
+management?
+A) Share keys with trusted parties only
+B) Encrypt all keys automatically
+C) Limit access to sensitive keys to authorized personnel only
+D) Store keys in plain text for accessibility
+
+
+--- PAGE 4 ---
+PART B: SHORT ANSWER QUESTIONS (70 marks - 7 marks each)
+1. Explain the difference between Declarative and Imperative approaches in
+Infrastructure as Code (IaC). Provide an example of how each approach would handle
+updating a web server configuration.
+[7 marks]
+2. Describe the three pillars of CI/CD (Continuous Integration, Continuous Delivery,
+and Continuous Deployment). What problems does each pillar solve in the software
+development lifecycle?
+[7 marks]
+3. In Kubernetes, explain the concept of 'Readiness Probe' and 'Liveness Probe'.
+When would you use each one, and what happens when they fail?
+[7 marks]
+4. You are implementing a Terraform infrastructure for a production environment with
+a team of 5 developers. Why should you NOT store the terraform.tfstate file in Git
+version control? What are the risks and recommended alternatives?
+[7 marks]
+5. Explain how SQL Injection attacks work using the UNION keyword. Provide a
+step-by-step explanation of how an attacker would determine the number of columns
+in the original query.
+[7 marks]
+6. Describe the concept of 'Idempotency' in Infrastructure as Code. Why is this
+principle critical when managing cloud infrastructure, and what problems can arise if
+operations are not idempotent?
+[7 marks]
+7. In Kubernetes, explain the difference between a Deployment and a ReplicaSet. How
+does a Deployment manage rolling updates, and why is this approach better than
+directly managing ReplicaSets?
+[7 marks]
+8. Compare path traversal attacks with file upload vulnerabilities. How can a web
+application defend against both types of attacks? Provide specific mitigation
+strategies for each.
+[7 marks]
+9. Explain how TLS/SSL provides data encryption, data integrity, and authentication.
+Why are public-private key cryptography and digital certificates essential
+components of this process?
+[7 marks]
+10. In the context of Kubernetes Ingress Controllers, compare the two main types:
+web server-based (e.g., NGINX) and cloud load balancer-based. What are the
+advantages and disadvantages of each approach in terms of cost, complexity, and
+functionality?
+[7 marks]
+
+
+--- PAGE 5 ---
+END OF EXAMINATION
+Ensure all answers are clearly written. Show your working where applicable. Good luck!

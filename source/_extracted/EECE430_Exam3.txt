@@ -1,0 +1,319 @@
+EECE 430 — Software Engineering
+Final Examination — Practice Exam 3
+Name: ____________________________________ Date: ___________________
+Student ID: _______________________________ Section: _________________
+Instructions:
+• This exam contains 33 multiple-choice questions.
+• Time allowed: 1 hour.
+• Circle the letter of the best answer for each question.
+• Each question is worth equal marks.
+• No electronic devices, notes, or textbooks are permitted.
+1. Which agile principle states that the skills of the development team should be recognized and team
+members should develop their own ways of working?
+A) Customer involvement
+B) Incremental delivery
+C) People not process
+D) Maintain simplicity
+2. A team practices TDD and all tests pass after implementing a feature. What should the team do NEXT
+before moving to the next feature?
+A) Write additional documentation
+B) Refactor the code to improve its structure while keeping all tests passing
+C) Delete the tests since they are no longer needed
+D) Present the feature to the Product Owner for approval
+3. Which of the following is a benefit of test automation in agile development?
+A) It eliminates the need for developers to understand the code
+B) Tests can be scheduled to execute unattended overnight and analysis done the next morning
+C) It removes the need for acceptance testing
+D) It guarantees zero bugs in production
+4. Incremental development in agile requires the team to prioritize features so that:
+A) The least important features are implemented first to get them out of the way
+B) All features are implemented simultaneously across parallel teams
+C) The most important features are implemented first, with details defined only for the current increment
+D) Features are randomly selected for each increment
+5. Why might architecture refactoring be problematic in agile development even though code
+refactoring is encouraged?
+A) Architecture refactoring is always cheaper than code refactoring
+B) Architecture changes are much more expensive because they affect many components in the system
+C) Agile forbids any changes to the architecture
+D) Architecture is not relevant in agile projects
+6. During a sprint review, the Product Owner determines that the sprint goal was NOT achieved. What is
+the appropriate response?
+A) Fire the ScrumMaster
+B) Extend the sprint until the goal is met
+C) Confirm that the PBI implementation is incomplete, reflect on what went wrong, and carry items to
+future sprints
+
+-- 1 of 7 --
+
+D) Skip the next sprint to compensate
+7. Which XP practice ensures that no single developer becomes the sole expert on any part of the
+codebase?
+A) Simple design
+B) Sustainable pace
+C) Collective ownership — all pairs work on all areas so no islands of expertise develop
+D) Small releases
+8. Story points differ from effort estimates expressed in person-hours because:
+A) Story points are always more accurate than person-hour estimates
+B) Story points are relative estimates that account for size, complexity, technology, and unknowns, while
+person-hours measure absolute time
+C) Person-hours cannot be used in agile methodologies
+D) Story points can only be used with the Fibonacci scale
+9. What is the key difference between sprint planning output and product backlog?
+A) They contain the same information in different formats
+B) The sprint backlog is a breakdown showing what is involved in implementing the PBIs chosen for that
+sprint, while the product backlog lists all remaining work
+C) The product backlog is created during the sprint and the sprint backlog is created at project start
+D) Sprint planning produces the project budget while the product backlog produces the schedule
+10. Which assumption of traditional Scrum may NOT hold in modern distributed teams?
+A) Sprints should be timeboxed
+B) The team will be co-located, sharing a workspace, with all members attending morning meetings
+C) The product backlog should be prioritized
+D) The development team should be self-organizing
+11. A company is building a web application and must decide on an architecture. The system needs a
+browser-based UI, user authentication, application logic, shared services, and a database. Which
+architecture is MOST appropriate?
+A) Pipe and Filter
+B) A generic layered web architecture with UI, authentication, application, shared services, and database
+layers
+C) A single monolithic executable with no layer separation
+D) Repository pattern
+12. What is the PRIMARY advantage of the client-server pattern when the load on a system is variable?
+A) Clients can process data without any server
+B) Servers can be replicated to handle increased load
+C) The client-server pattern eliminates network dependency
+D) All data is processed on the client side
+13. An architect chooses a service-oriented architecture where all services are stateless. What key
+operational benefit does statelessness provide?
+A) Services never need to access any data
+B) Services can be replicated, distributed, and migrated from one server to another freely
+C) Services do not need to communicate with each other
+D) Services are immune to all security attacks
+14. When choosing between relational and NoSQL databases for a system, which guideline from the
+course applies?
+A) Always use NoSQL databases because they are newer
+B) Relational databases like MySQL are suitable for transaction management; NoSQL databases like
+MongoDB are more flexible for data analysis
+
+-- 2 of 7 --
+
+C) The database choice has no impact on architectural design
+D) Both types are identical in capabilities
+15. In a service-oriented architecture, what role does a service gateway play?
+A) It stores all service data in a central repository
+B) It acts as a single access point and proxy, enabling transformations, routing, and common processing
+so clients don't need to know communication protocols
+C) It replaces the need for individual services
+D) It compiles and deploys service code
+16. A SaaS provider wants business customers to be able to authenticate users through their own
+corporate credentials rather than the provider's system. This customization is called:
+A) Branding customization
+B) Business rules customization
+C) Authentication customization — delegating authentication to the customer's own identity system
+D) Data schema customization
+17. Which statement about scaling in cloud-based systems is CORRECT?
+A) Scaling-up (using more powerful servers) is the preferred approach in cloud systems
+B) Scaling-out (adding more virtual servers) is the normal approach, requiring software organized so
+components can be replicated and run in parallel
+C) Cloud systems cannot be scaled once deployed
+D) Scaling only applies to database servers, not application servers
+18. A cloud system uses database mirroring where updates to the primary database are replicated to a
+standby database in a different location. This is an implementation of:
+A) Scalability
+B) Elasticity
+C) Resilience — maintaining redundant copies so operation can switch automatically if the primary fails
+D) Multi-tenancy
+19. Which of the following is a disadvantage of SaaS for CUSTOMERS?
+A) Try before you buy options
+B) Continuous deployment of new versions
+C) Loss of control over software updates — the provider decides when updates are applied
+D) Reduced upfront costs
+20. When extending a multi-tenant database using the 'additional tables' approach instead of additional
+columns, what is the main drawback?
+A) It prevents tenants from having custom fields
+B) It adds complexity to the database management software
+C) It requires separate physical databases per tenant
+D) It eliminates the ability to query data
+21. In a centralized version control system, what mechanism prevents two developers from overwriting
+each other's changes to the same component?
+A) The system automatically merges all changes without notification
+B) When a component is checked out, the system warns other users, and upon check-in, the CMS
+ensures changes do not conflict
+C) Only one developer can access the repository at a time
+D) Developers must verbally coordinate who works on which files
+22. Which of the following is a feature of code management systems that ensures files are never
+overwritten by later changes?
+A) Storage management
+B) Project support
+
+-- 3 of 7 --
+
+C) Independent development — several developers can work on the same file and a new version is
+created upon submission
+D) Change history recording
+23. A DevOps team wants to ensure their testing environment is exactly the same as their deployment
+environment. Which practice BEST achieves this?
+A) Manual configuration of each server by system administrators
+B) Infrastructure as Code with Docker containers — using the same container image for both test and
+production
+C) Writing detailed documentation about server setup
+D) Hiring separate teams for test and production environments
+24. According to the code completeness checklist in Scrum/DevOps, code is considered complete
+when it has been:
+A) Written and compiled successfully
+B) Reviewed by another team member, unit/integration tested, integrated with no errors, and accepted via
+acceptance tests
+C) Committed to the repository by the developer
+D) Demonstrated at the daily scrum meeting
+25. What is the key difference between Git (the tool) and GitHub (the platform)?
+A) They are the same thing
+B) Git is a distributed version control system for tracking source code changes; GitHub is a cloud-based
+hosting service for managing Git repositories
+C) GitHub is a programming language; Git is an IDE
+D) Git only works offline; GitHub only works online
+26. Which of the following scenarios BEST illustrates the 'cascading errors' disadvantage of
+microservices?
+A) A developer writes a bug in one microservice that only affects that service
+B) Service A calls Service B, which calls Service C. When Service C fails, Service B fails, which causes
+Service A and all applications using A to fail
+C) Two microservices are deployed on the same container
+D) A microservice's database grows too large
+27. In the context of microservice data design, why should data sharing between services be minimized
+and preferably read-only?
+A) Because microservices cannot use databases
+B) To reduce the need for data consistency management — if services share writable data, changes must
+propagate to all services, adding overhead and complexity
+C) Because read-only data is faster to encrypt
+D) To prevent microservices from communicating at all
+28. A system uses indirect (message broker) communication between microservices. Which of the
+following is a disadvantage of this approach compared to direct communication?
+A) It makes it harder to replace individual services
+B) It does not support asynchronous interactions
+C) The overall system becomes more complex, and the broker can become a bottleneck or single point of
+failure
+D) Services must know each other's exact network addresses
+29. Why is the microservices approach described as having an 'increased security attack surface'?
+A) Microservices use weaker encryption algorithms
+B) Each microservice communicates over the network, creating multiple points that an attacker can target
+C) Microservices cannot implement authentication
+D) Microservices store all data in a single unprotected database
+
+-- 4 of 7 --
+
+30. In a buffer overflow injection attack, what happens?
+A) The attacker sends too many HTTP requests to overwhelm the server
+B) Malicious code is injected through a valid input field, overflowing the allocated memory buffer and
+potentially executing attacker-controlled instructions
+C) The attacker steals cookies from the user's browser
+D) The attacker guesses the user's password through repeated attempts
+31. A company implements federated identity (e.g., 'Login with Google'). Which of the following is an
+advantage of this approach for the USER?
+A) The user must create a new unique password for every service
+B) A single set of credentials is stored by a trusted identity service, reducing the number of passwords to
+track and the risk of breaches
+C) The user's data is automatically shared with all federated services
+D) The user no longer needs any form of authentication
+32. According to data protection principles in the course, what must happen when a user deletes their
+account from a software product?
+A) The data should be archived for future marketing use
+B) The personal data associated with that account must be deleted — data should not be kept longer than
+needed
+C) The data should be transferred to another user
+D) The data should be encrypted but kept indefinitely
+33. DevSecOps automates the integration of security at which phase(s) of the software development
+lifecycle?
+A) Only during the testing phase
+B) Only during deployment and delivery
+C) In ALL phases: design, implementation, testing, deployment, and delivery
+D) Only during the initial design phase
+— END OF QUESTIONS —
+
+-- 5 of 7 --
+
+EECE 430 — Practice Exam 3 — Answer Key
+Quick Reference:
+Q Ans Q Ans Q Ans
+1. C 2. B 3. B
+4. C 5. B 6. C
+7. C 8. B 9. B
+10. B 11. B 12. B
+13. B 14. B 15. B
+16. C 17. B 18. C
+19. C 20. B 21. B
+22. C 23. B 24. B
+25. B 26. B 27. B
+28. C 29. B 30. B
+31. B 32. B 33. C
+Detailed Explanations:
+1. C — 'People not process' means recognizing the team's skills and letting them develop their own ways of
+working without prescriptive processes.
+2. B — In TDD, after all tests pass, the next step is to refactor the code for improvement. Then move on to
+the next feature increment.
+3. B — Test automation benefits include faster execution, greater coverage, less human resources needed,
+and the ability to run tests unattended (e.g., overnight).
+4. C — Agile prioritizes features so the most important ones are built first. Only the details of the feature being
+implemented in the current increment are defined.
+5. B — Architecture refactoring is much more expensive than code refactoring because architectural changes
+ripple through many system components.
+6. C — The Product Owner confirms whether the goal is met. If not, the team reflects on what went wrong,
+and incomplete items return to the backlog.
+7. C — Collective ownership means pairs of developers work on all areas of the system, preventing
+knowledge silos and ensuring shared responsibility.
+8. B — Story points are relative, factoring in size, complexity, technology, and unknowns. Person-hours are
+absolute time estimates. Story points are estimated by comparison with a baseline task.
+9. B — Sprint planning produces a sprint backlog — a detailed breakdown of PBIs for that sprint. The product
+backlog is the full prioritized list of all remaining work.
+10. B — Scrum assumes co-located, full-time teams attending daily morning meetings. In reality, teams may
+be distributed, part-time, or on flexible hours.
+11. B — The course describes a generic layered web architecture with exactly these layers: browser UI,
+authentication/UI management, application logic, shared services, and database/transaction management.
+12. B — Client-server is used when load is variable because servers can be replicated across a network to
+handle demand.
+
+-- 6 of 7 --
+
+13. B — Stateless services can be replicated and migrated freely because they hold no internal state. State is
+stored in a database or passed with each request.
+14. B — The course states that relational databases (MySQL) suit transaction management, while NoSQL
+(MongoDB) is more flexible for data analysis.
+15. B — A service gateway is a single access point acting as a proxy. It handles transformations, routing, and
+common processing across services.
+16. C — Authentication customization allows businesses to use their own corporate credentials
+(federated/delegated authentication) instead of the SaaS provider's credentials.
+17. B — In cloud systems, scaling-out (adding servers) is preferred over scaling-up. Software must be
+organized so individual components can be replicated and parallelized.
+18. C — Database mirroring with automatic failover is a resilience mechanism — redundant copies in
+different locations ensure continuity if the primary fails.
+19. C — Customers lose control over when updates happen — the SaaS provider pushes updates to all
+customers simultaneously.
+20. B — Using separate extension tables for custom fields adds complexity to the database management
+software compared to the simpler additional columns approach.
+21. B — In centralized VCS, checked-out files are marked as shared. The system warns others and ensures
+no conflicts on check-in by comparing versions.
+22. C — Independent development: multiple developers can work on the same file simultaneously. New
+versions are created on submission so files are never overwritten.
+23. B — Docker containers and IaC ensure identical environments. Using the same container image for test
+and production guarantees they are the same.
+24. B — The checklist requires: reviewed (meets coding standards), unit/integration tested (all pass),
+integrated (no errors), and accepted (acceptance tests pass, PO confirms).
+25. B — Git is the DVCS tool itself. GitHub is a cloud platform that hosts Git repositories and provides
+collaboration features on top of Git.
+26. B — Cascading errors: one service invokes another in a chain. If one fails, the failure propagates back
+through all calling services and their dependent applications.
+27. B — Minimizing shared writable data reduces the burden of data consistency management. Read-only
+sharing avoids propagation overhead from updates across services.
+28. C — Message brokers add system complexity and can become bottlenecks or single points of failure,
+though they decouple services and support easier modification.
+29. B — Each microservice communicates via network messages, and each communication point is a
+potential attack vector — more services means more targets.
+30. B — Buffer overflow: malicious input exceeds allocated memory, potentially allowing the attacker to
+execute injected code.
+31. B — Federated identity means one set of credentials at a trusted provider. Fewer stored passwords
+means less breach exposure and less for users to remember.
+32. B — The 'data lifetime' principle: you must not keep data longer than needed. When a user deletes their
+account, their personal data must be deleted.
+33. C — DevSecOps automates security integration across ALL phases: design, implementation, testing,
+deployment, and delivery.
+— END OF ANSWER KEY —
+
+-- 7 of 7 --
+

@@ -1,0 +1,1322 @@
+[
+  {
+    "id": 1,
+    "section": "DevOps & CI/CD",
+    "question": "What does DevOps combine?",
+    "options": {
+      "A": "Development and Operations",
+      "B": "Design and Optimization",
+      "C": "Debugging and Outsourcing",
+      "D": "Deployment and Observation"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 2,
+    "section": "DevOps & CI/CD",
+    "question": "Which of the following is NOT a core DevOps principle?",
+    "options": {
+      "A": "Automation of the SDLC",
+      "B": "Collaboration and communication",
+      "C": "Waterfall project management",
+      "D": "Continuous improvement and minimization of waste"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 3,
+    "section": "DevOps & CI/CD",
+    "question": "What does CI stand for in CI/CD?",
+    "options": {
+      "A": "Continuous Inspection",
+      "B": "Continuous Integration",
+      "C": "Code Integration",
+      "D": "Centralized Infrastructure"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 4,
+    "section": "DevOps & CI/CD",
+    "question": "What is the main difference between Continuous Delivery and Continuous Deployment?",
+    "options": {
+      "A": "Continuous Delivery is faster",
+      "B": "Continuous Deployment requires manual testing",
+      "C": "Continuous Delivery requires a manual approval to deploy to production",
+      "D": "There is no difference"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 5,
+    "section": "DevOps & CI/CD",
+    "question": "What does 'Shift Left' mean in DevOps?",
+    "options": {
+      "A": "Move deployment earlier",
+      "B": "Shift security and testing earlier in the development process",
+      "C": "Move the development team to the left side of the office",
+      "D": "Shift from cloud to on-premises"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 6,
+    "section": "DevOps & CI/CD",
+    "question": "How does DevSecOps relate to DevOps?",
+    "options": {
+      "A": "DevSecOps replaces DevOps entirely",
+      "B": "DevSecOps embeds security checks into every stage of the development lifecycle",
+      "C": "DevSecOps removes the need for testing",
+      "D": "DevSecOps only focuses on deployment security"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 7,
+    "section": "DevOps & CI/CD",
+    "question": "Before CI/CD, what was a common problem during code merging?",
+    "options": {
+      "A": "Automated conflict resolution",
+      "B": "Big conflicts and broken builds from merging long-lived branches",
+      "C": "Instant deployment",
+      "D": "No need for testing"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 8,
+    "section": "DevOps & CI/CD",
+    "question": "What is a CI/CD Pipeline?",
+    "options": {
+      "A": "A methodology for writing code",
+      "B": "A series of automatic steps that build, test, and deliver code",
+      "C": "A type of version control system",
+      "D": "A manual deployment checklist"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 9,
+    "section": "DevOps & CI/CD",
+    "question": "Which deployment strategy involves running the old and new versions simultaneously?",
+    "options": {
+      "A": "Waterfall deployment",
+      "B": "Big bang deployment",
+      "C": "Blue-green deployment",
+      "D": "Manual deployment"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 10,
+    "section": "DevOps & CI/CD",
+    "question": "In a CI/CD pipeline, what happens in the 'Verify' phase?",
+    "options": {
+      "A": "Code is deployed to production",
+      "B": "Code is tested to ensure correctness and quality standards",
+      "C": "Users are notified",
+      "D": "Servers are configured"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 11,
+    "section": "Containers & Docker",
+    "question": "What is the main purpose of Docker?",
+    "options": {
+      "A": "To virtualize different operating systems",
+      "B": "To containerize applications and ship them",
+      "C": "To replace virtual machines entirely",
+      "D": "To manage network infrastructure"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 12,
+    "section": "Containers & Docker",
+    "question": "What do Docker containers share with the host?",
+    "options": {
+      "A": "The entire operating system",
+      "B": "The OS kernel",
+      "C": "The application code",
+      "D": "The user interface"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 13,
+    "section": "Containers & Docker",
+    "question": "Can you run a Windows-based container on a Linux Docker host?",
+    "options": {
+      "A": "Yes, always",
+      "B": "Yes, with special plugins",
+      "C": "No, because they don't share the same kernel",
+      "D": "Yes, but only in production"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 14,
+    "section": "Containers & Docker",
+    "question": "How do containers differ from Virtual Machines in terms of size?",
+    "options": {
+      "A": "Containers are typically in Gigabytes",
+      "B": "Containers are typically in Megabytes, VMs in Gigabytes",
+      "C": "They are the same size",
+      "D": "VMs are smaller than containers"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 15,
+    "section": "Containers & Docker",
+    "question": "What is a Docker image?",
+    "options": {
+      "A": "A running container",
+      "B": "A package or template used to create containers",
+      "C": "A virtual machine snapshot",
+      "D": "A network configuration file"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 16,
+    "section": "Containers & Docker",
+    "question": "Which Dockerfile instruction specifies the base image?",
+    "options": {
+      "A": "RUN",
+      "B": "CMD",
+      "C": "FROM",
+      "D": "COPY"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 17,
+    "section": "Containers & Docker",
+    "question": "What does the WORKDIR instruction do in a Dockerfile?",
+    "options": {
+      "A": "Copies files to the container",
+      "B": "Sets the working directory inside the container",
+      "C": "Exposes a port",
+      "D": "Runs a command"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 18,
+    "section": "Containers & Docker",
+    "question": "What is the difference between CMD and RUN in a Dockerfile?",
+    "options": {
+      "A": "CMD runs during build, RUN runs at startup",
+      "B": "RUN executes during build, CMD specifies the default command at container startup",
+      "C": "They are identical",
+      "D": "CMD installs packages, RUN starts services"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "section": "Containers & Docker",
+    "question": "What is Container Orchestration?",
+    "options": {
+      "A": "Writing Dockerfiles",
+      "B": "Automatically deploying and managing containers at scale",
+      "C": "Creating Docker images",
+      "D": "Installing Docker on servers"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 20,
+    "section": "Containers & Docker",
+    "question": "Which of the following is a container orchestration tool?",
+    "options": {
+      "A": "Git",
+      "B": "Jenkins",
+      "C": "Kubernetes",
+      "D": "Ansible"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 21,
+    "section": "Kubernetes",
+    "question": "What is the smallest deployable unit in Kubernetes?",
+    "options": {
+      "A": "Container",
+      "B": "Node",
+      "C": "Pod",
+      "D": "Deployment"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 22,
+    "section": "Kubernetes",
+    "question": "What component in K8s architecture acts as the front-end for the cluster?",
+    "options": {
+      "A": "ETCD",
+      "B": "Kubelet",
+      "C": "API Server",
+      "D": "Scheduler"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 23,
+    "section": "Kubernetes",
+    "question": "What is ETCD used for in Kubernetes?",
+    "options": {
+      "A": "Container runtime",
+      "B": "Distributed reliable key-value store for cluster data",
+      "C": "Load balancing",
+      "D": "DNS resolution"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 24,
+    "section": "Kubernetes",
+    "question": "What does the Kubernetes Scheduler do?",
+    "options": {
+      "A": "Monitors node health",
+      "B": "Distributes containers across multiple nodes",
+      "C": "Manages networking",
+      "D": "Stores cluster state"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "section": "Kubernetes",
+    "question": "What is the role of kubelet?",
+    "options": {
+      "A": "It is the cluster's database",
+      "B": "It runs on each node and ensures containers are running as expected",
+      "C": "It balances network traffic",
+      "D": "It schedules pods"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 26,
+    "section": "Kubernetes",
+    "question": "Which Kubernetes Service type exposes a service only within the cluster?",
+    "options": {
+      "A": "NodePort",
+      "B": "LoadBalancer",
+      "C": "ClusterIP",
+      "D": "ExternalName"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 27,
+    "section": "Kubernetes",
+    "question": "What is the valid port range for a NodePort service in Kubernetes?",
+    "options": {
+      "A": "1-1024",
+      "B": "8000-9000",
+      "C": "30000-32767",
+      "D": "80-443"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 28,
+    "section": "Kubernetes",
+    "question": "What does Kubernetes Ingress manage?",
+    "options": {
+      "A": "Internal pod-to-pod communication",
+      "B": "External HTTP/HTTPS access to services in the cluster",
+      "C": "Container image storage",
+      "D": "Node scaling"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 29,
+    "section": "Kubernetes",
+    "question": "Why is putting WordPress and MySQL in the same Pod considered an anti-pattern?",
+    "options": {
+      "A": "They can't communicate over a network",
+      "B": "They need different scaling strategies and can work on different machines",
+      "C": "WordPress requires Windows",
+      "D": "MySQL doesn't run in containers"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 30,
+    "section": "Kubernetes",
+    "question": "What happens when a Liveness Probe fails repeatedly?",
+    "options": {
+      "A": "The Pod is deleted",
+      "B": "The container is killed and restarted within the Pod",
+      "C": "Traffic is stopped",
+      "D": "The node is drained"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 31,
+    "section": "Kubernetes",
+    "question": "What happens when a Readiness Probe fails?",
+    "options": {
+      "A": "The container is restarted",
+      "B": "The Pod is removed from Service load balancing but keeps running",
+      "C": "The node shuts down",
+      "D": "The Pod is deleted"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 32,
+    "section": "Kubernetes",
+    "question": "In Kubernetes resource management, what does 'requests' define?",
+    "options": {
+      "A": "Maximum allowed CPU usage",
+      "B": "Minimum guaranteed resources used for scheduling",
+      "C": "Network bandwidth limits",
+      "D": "Storage capacity"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 33,
+    "section": "Kubernetes",
+    "question": "What happens when a container exceeds its memory limit?",
+    "options": {
+      "A": "It is throttled",
+      "B": "It is killed (OOMKilled)",
+      "C": "Nothing happens",
+      "D": "It gets more memory automatically"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 34,
+    "section": "Kubernetes",
+    "question": "What is the purpose of a Kubernetes ConfigMap?",
+    "options": {
+      "A": "To store encrypted secrets",
+      "B": "To store non-confidential configuration data as key-value pairs",
+      "C": "To define resource limits",
+      "D": "To manage container images"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 35,
+    "section": "Kubernetes",
+    "question": "How should data in a Kubernetes Secret be encoded?",
+    "options": {
+      "A": "Plain text",
+      "B": "Base64 encoded",
+      "C": "SHA-256 hashed",
+      "D": "AES encrypted"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 36,
+    "section": "Kubernetes",
+    "question": "What does a ReplicaSet ensure?",
+    "options": {
+      "A": "Each pod has unique configuration",
+      "B": "A stable set of a desired number of pods is always running",
+      "C": "Pods are deployed to specific nodes",
+      "D": "Network policies are enforced"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 37,
+    "section": "Kubernetes",
+    "question": "What does a Kubernetes Deployment manage that a ReplicaSet doesn't?",
+    "options": {
+      "A": "Pod creation",
+      "B": "Rolling updates, rollbacks, and revision history",
+      "C": "Network routing",
+      "D": "Storage volumes"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 38,
+    "section": "Kubernetes",
+    "question": "Which kubectl command applies a declarative configuration file?",
+    "options": {
+      "A": "kubectl run",
+      "B": "kubectl create",
+      "C": "kubectl apply -f",
+      "D": "kubectl exec"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 39,
+    "section": "Terraform & IaC",
+    "question": "What is Infrastructure as Code (IaC)?",
+    "options": {
+      "A": "Manually configuring servers",
+      "B": "Provisioning and managing infrastructure using code instead of manual configuration",
+      "C": "Writing application code",
+      "D": "Documenting infrastructure in spreadsheets"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 40,
+    "section": "Terraform & IaC",
+    "question": "What does 'idempotent' mean in the context of IaC?",
+    "options": {
+      "A": "Running the script once produces errors",
+      "B": "Running the script multiple times always results in the same desired state",
+      "C": "The script can only run once",
+      "D": "The script modifies state randomly"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 41,
+    "section": "Terraform & IaC",
+    "question": "What is the difference between mutable and immutable infrastructure?",
+    "options": {
+      "A": "There is no difference",
+      "B": "Mutable infrastructure is updated in place; immutable replaces servers with new ones",
+      "C": "Immutable infrastructure is always updated in place",
+      "D": "Mutable infrastructure cannot be changed"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 42,
+    "section": "Terraform & IaC",
+    "question": "Terraform uses which approach to define infrastructure?",
+    "options": {
+      "A": "Imperative",
+      "B": "Procedural",
+      "C": "Declarative",
+      "D": "Object-oriented"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 43,
+    "section": "Terraform & IaC",
+    "question": "What language does Terraform use for configuration?",
+    "options": {
+      "A": "YAML",
+      "B": "JSON only",
+      "C": "HCL (HashiCorp Configuration Language)",
+      "D": "Python"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 44,
+    "section": "Terraform & IaC",
+    "question": "What does 'terraform init' do?",
+    "options": {
+      "A": "Deploys infrastructure",
+      "B": "Destroys resources",
+      "C": "Scans code, downloads provider plugins, and initializes the working directory",
+      "D": "Shows the execution plan"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 45,
+    "section": "Terraform & IaC",
+    "question": "What does 'terraform plan' do?",
+    "options": {
+      "A": "Creates resources immediately",
+      "B": "Shows what changes Terraform will make without applying them",
+      "C": "Destroys all resources",
+      "D": "Downloads provider plugins"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 46,
+    "section": "Terraform & IaC",
+    "question": "In Terraform plan output, what does a plus sign (+) indicate?",
+    "options": {
+      "A": "A resource will be deleted",
+      "B": "A resource will be modified",
+      "C": "A resource will be created",
+      "D": "A resource is unchanged"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 47,
+    "section": "Terraform & IaC",
+    "question": "What is the correct syntax for a Terraform resource block?",
+    "options": {
+      "A": "resource \"PROVIDER_TYPE\" \"NAME\" { CONFIG }",
+      "B": "create \"TYPE\" \"NAME\" { CONFIG }",
+      "C": "deploy \"PROVIDER\" \"TYPE\" { CONFIG }",
+      "D": "instance \"NAME\" { CONFIG }"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 48,
+    "section": "Terraform & IaC",
+    "question": "What is a Terraform data source?",
+    "options": {
+      "A": "A way to create new resources",
+      "B": "Read-only information fetched from the provider",
+      "C": "A database connection",
+      "D": "A log file"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 49,
+    "section": "Terraform & IaC",
+    "question": "How do you reference a variable in Terraform?",
+    "options": {
+      "A": "${variable_name}",
+      "B": "var.variable_name",
+      "C": "@variable_name",
+      "D": "$variable_name"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 50,
+    "section": "Terraform & IaC",
+    "question": "What is the purpose of Terraform output variables?",
+    "options": {
+      "A": "To define input parameters",
+      "B": "To export useful information (like IP addresses) after apply",
+      "C": "To create resources",
+      "D": "To delete state files"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 51,
+    "section": "Terraform & IaC",
+    "question": "What is the default Terraform state file name?",
+    "options": {
+      "A": "state.json",
+      "B": "terraform.tfstate",
+      "C": "main.tf",
+      "D": "terraform.lock.hcl"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 52,
+    "section": "Terraform & IaC",
+    "question": "Why is storing Terraform state in version control a bad idea?",
+    "options": {
+      "A": "It's too large",
+      "B": "Manual errors, no locking, and secrets stored in plain text",
+      "C": "Git doesn't support JSON",
+      "D": "It's automatically backed up anyway"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 53,
+    "section": "Terraform & IaC",
+    "question": "What is a recommended remote backend for Terraform state?",
+    "options": {
+      "A": "Local filesystem",
+      "B": "Git repository",
+      "C": "Amazon S3 with DynamoDB for locking",
+      "D": "Email attachment"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 54,
+    "section": "Terraform & IaC",
+    "question": "What is the primary key name required for a DynamoDB table used for Terraform state locking?",
+    "options": {
+      "A": "StateID",
+      "B": "LockID",
+      "C": "TerraformLock",
+      "D": "lock_key"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 55,
+    "section": "Terraform & IaC",
+    "question": "What is a Terraform module?",
+    "options": {
+      "A": "A single resource block",
+      "B": "A reusable, self-contained package of Terraform configuration",
+      "C": "A provider plugin",
+      "D": "A state file"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 56,
+    "section": "Terraform & IaC",
+    "question": "What is the typical file structure of a Terraform module?",
+    "options": {
+      "A": "main.tf, variables.tf, outputs.tf",
+      "B": "index.js, package.json",
+      "C": "Dockerfile, docker-compose.yml",
+      "D": "app.py, requirements.txt"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 57,
+    "section": "Terraform & IaC",
+    "question": "What does the lifecycle setting 'create_before_destroy' do in Terraform?",
+    "options": {
+      "A": "Deletes the resource first, then creates a new one",
+      "B": "Creates the replacement resource before deleting the old one",
+      "C": "Prevents any changes to the resource",
+      "D": "Skips the resource during apply"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 58,
+    "section": "Web Application Security",
+    "question": "What is the fundamental security problem with web applications?",
+    "options": {
+      "A": "Slow performance",
+      "B": "All user input is untrusted",
+      "C": "Too many features",
+      "D": "Expensive hosting"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 59,
+    "section": "Web Application Security",
+    "question": "What is SQL Injection?",
+    "options": {
+      "A": "A method to optimize SQL queries",
+      "B": "An attack where malicious SQL is inserted into input fields to manipulate database queries",
+      "C": "A database backup technique",
+      "D": "A type of database encryption"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 60,
+    "section": "Web Application Security",
+    "question": "In SQL injection, what does the '--' sequence do?",
+    "options": {
+      "A": "Starts a new query",
+      "B": "Acts as a comment, removing the rest of the query",
+      "C": "Encrypts the query",
+      "D": "Creates a new table"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 61,
+    "section": "Web Application Security",
+    "question": "What is the purpose of the UNION keyword in SQL injection attacks?",
+    "options": {
+      "A": "To delete data",
+      "B": "To combine results from multiple SELECT queries to extract additional data",
+      "C": "To update records",
+      "D": "To create tables"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 62,
+    "section": "Web Application Security",
+    "question": "Why is NULL used when determining column count in UNION-based SQL injection?",
+    "options": {
+      "A": "NULL is faster to process",
+      "B": "NULL is type-flexible and can fit into almost any column type",
+      "C": "NULL deletes data",
+      "D": "NULL is required by SQL syntax"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 63,
+    "section": "Web Application Security",
+    "question": "What is Out-of-Band SQL Injection?",
+    "options": {
+      "A": "SQL injection via the URL",
+      "B": "Exploiting SQL injection by triggering network interactions (like DNS) to exfiltrate data",
+      "C": "SQL injection that crashes the server",
+      "D": "SQL injection in stored procedures only"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 64,
+    "section": "Web Application Security",
+    "question": "What is OS Command Injection?",
+    "options": {
+      "A": "Installing malware via email",
+      "B": "Injecting shell commands through application inputs that are passed to system commands",
+      "C": "Brute forcing SSH passwords",
+      "D": "Modifying system configuration files directly"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 65,
+    "section": "Web Application Security",
+    "question": "In command injection, what does the '&' character do?",
+    "options": {
+      "A": "Combines two strings",
+      "B": "Acts as a shell command separator to execute multiple commands",
+      "C": "Encrypts the command",
+      "D": "Redirects output to a file"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 66,
+    "section": "Web Application Security",
+    "question": "What is a Path Traversal attack?",
+    "options": {
+      "A": "Navigating a website normally",
+      "B": "Using '../' sequences to access files outside the intended directory",
+      "C": "A type of network scanning",
+      "D": "A DoS attack"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 67,
+    "section": "Web Application Security",
+    "question": "What is SSRF (Server-Side Request Forgery)?",
+    "options": {
+      "A": "A client-side scripting attack",
+      "B": "An attack that causes the server to make requests to unintended locations",
+      "C": "A database encryption method",
+      "D": "A password cracking technique"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 68,
+    "section": "Web Application Security",
+    "question": "In SSRF, why do applications trust requests from localhost (127.0.0.1)?",
+    "options": {
+      "A": "Localhost is always secure",
+      "B": "Access controls may be bypassed for requests from the local machine",
+      "C": "Localhost has special encryption",
+      "D": "Localhost uses a different protocol"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 69,
+    "section": "Web Application Security",
+    "question": "What is Cross-Site Scripting (XSS)?",
+    "options": {
+      "A": "Injecting SQL into a database",
+      "B": "Injecting malicious scripts into trusted websites that execute in victims' browsers",
+      "C": "A network protocol attack",
+      "D": "A server-side vulnerability only"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 70,
+    "section": "Web Application Security",
+    "question": "What are the three interrelated mechanisms for handling user access in web applications?",
+    "options": {
+      "A": "Firewall, VPN, Encryption",
+      "B": "Authentication, Session Management, Access Control",
+      "C": "Login, Logout, Password Reset",
+      "D": "HTTP, HTTPS, SSH"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 71,
+    "section": "Web Application Security",
+    "question": "What is a session token?",
+    "options": {
+      "A": "A permanent user identifier",
+      "B": "A unique string that maps to a user's session on the server",
+      "C": "A type of encryption key",
+      "D": "A database record"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 72,
+    "section": "Web Application Security",
+    "question": "What is 'salting' in password storage?",
+    "options": {
+      "A": "Encrypting the entire database",
+      "B": "Adding a unique random string to each password before hashing",
+      "C": "Using a stronger hash algorithm",
+      "D": "Storing passwords in plain text with a label"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 73,
+    "section": "Web Application Security",
+    "question": "What is a Key Vault used for?",
+    "options": {
+      "A": "Physical server security",
+      "B": "Managing secrets, encryption keys, passwords, and certificates with controlled access",
+      "C": "Load balancing",
+      "D": "DNS management"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 74,
+    "section": "Web Application Security",
+    "question": "What does TLS provide?",
+    "options": {
+      "A": "Only encryption",
+      "B": "Data encryption, data integrity, and authentication",
+      "C": "Only authentication",
+      "D": "Only data integrity"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 75,
+    "section": "Web Application Security",
+    "question": "What is the purpose of a digital certificate?",
+    "options": {
+      "A": "To encrypt data at rest",
+      "B": "To link a public key to an entity, verified by a trusted certificate authority",
+      "C": "To store passwords",
+      "D": "To configure firewalls"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 76,
+    "section": "Web Application Security",
+    "question": "Which of the following is NOT a recommended file upload mitigation?",
+    "options": {
+      "A": "Check file extension",
+      "B": "Check MIME type against a whitelist",
+      "C": "Allow any file type and size",
+      "D": "Use antivirus scanning"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 77,
+    "section": "AWS Cloud",
+    "question": "What is cloud computing?",
+    "options": {
+      "A": "Hosting applications on your local machine",
+      "B": "On-demand delivery of IT resources over the internet with pay-as-you-go pricing",
+      "C": "Buying physical servers",
+      "D": "Using only open-source software"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 78,
+    "section": "AWS Cloud",
+    "question": "Which cloud model uses dedicated resources for a single organization?",
+    "options": {
+      "A": "Public cloud",
+      "B": "Hybrid cloud",
+      "C": "Private cloud",
+      "D": "Community cloud"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 79,
+    "section": "AWS Cloud",
+    "question": "What is a hybrid cloud?",
+    "options": {
+      "A": "A cloud only for startups",
+      "B": "A combination of public and private clouds with data/applications moving between them",
+      "C": "A cloud with no internet access",
+      "D": "A cloud that uses only Linux servers"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 80,
+    "section": "AWS Cloud",
+    "question": "What does SaaS stand for?",
+    "options": {
+      "A": "Storage as a Service",
+      "B": "Software as a Service",
+      "C": "Security as a Service",
+      "D": "Server as a Service"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 81,
+    "section": "AWS Cloud",
+    "question": "In which cloud service model does the developer only focus on writing and deploying code?",
+    "options": {
+      "A": "IaaS",
+      "B": "SaaS",
+      "C": "PaaS",
+      "D": "FaaS"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 82,
+    "section": "AWS Cloud",
+    "question": "What is an AWS Region?",
+    "options": {
+      "A": "A single data center",
+      "B": "A separate geographic area containing multiple Availability Zones",
+      "C": "A type of server",
+      "D": "A pricing model"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 83,
+    "section": "AWS Cloud",
+    "question": "How many Availability Zones does each AWS Region have at minimum?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "5"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 84,
+    "section": "AWS Cloud",
+    "question": "What is Amazon EC2?",
+    "options": {
+      "A": "A storage service",
+      "B": "A virtual machine in the cloud",
+      "C": "A database service",
+      "D": "A DNS service"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 85,
+    "section": "AWS Cloud",
+    "question": "What is the hypervisor's role in EC2?",
+    "options": {
+      "A": "Storing data",
+      "B": "Managing resource sharing and isolation between virtual machines",
+      "C": "Routing network traffic",
+      "D": "Encrypting data"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 86,
+    "section": "AWS Cloud",
+    "question": "What type of EC2 instances are ideal for compute-intensive tasks?",
+    "options": {
+      "A": "General purpose",
+      "B": "Memory optimized",
+      "C": "Compute optimized",
+      "D": "Storage optimized"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 87,
+    "section": "AWS Cloud",
+    "question": "What is AWS Lambda?",
+    "options": {
+      "A": "A virtual machine service",
+      "B": "A serverless compute service that runs code without managing servers",
+      "C": "A storage service",
+      "D": "A database service"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 88,
+    "section": "AWS Cloud",
+    "question": "What is a Lambda 'cold start'?",
+    "options": {
+      "A": "When Lambda runs out of memory",
+      "B": "Latency from creating a new execution environment for a Lambda function",
+      "C": "When Lambda crashes",
+      "D": "When Lambda is deleted"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 89,
+    "section": "AWS Cloud",
+    "question": "What is the default concurrency limit for Lambda functions per Region?",
+    "options": {
+      "A": "100",
+      "B": "500",
+      "C": "1000",
+      "D": "5000"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 90,
+    "section": "AWS Cloud",
+    "question": "What is Amazon S3?",
+    "options": {
+      "A": "A relational database",
+      "B": "An object storage service",
+      "C": "A compute service",
+      "D": "A networking service"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 91,
+    "section": "AWS Cloud",
+    "question": "What is the maximum size of a single object in S3?",
+    "options": {
+      "A": "1 GB",
+      "B": "5 GB",
+      "C": "5 TB",
+      "D": "Unlimited"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 92,
+    "section": "AWS Cloud",
+    "question": "Which S3 storage class is the lowest cost for archival?",
+    "options": {
+      "A": "S3 Standard",
+      "B": "S3 Intelligent-Tiering",
+      "C": "S3 Glacier Deep Archive",
+      "D": "S3 One Zone-IA"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 93,
+    "section": "AWS Cloud",
+    "question": "What is Amazon VPC?",
+    "options": {
+      "A": "A compute service",
+      "B": "A logically isolated virtual network in AWS",
+      "C": "A database service",
+      "D": "A monitoring tool"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 94,
+    "section": "AWS Cloud",
+    "question": "What makes a subnet 'public' in AWS?",
+    "options": {
+      "A": "Having EC2 instances in it",
+      "B": "Its route table having a route to an Internet Gateway",
+      "C": "Having a public IP range",
+      "D": "Being in a specific Availability Zone"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 95,
+    "section": "AWS Cloud",
+    "question": "What is the purpose of a NAT Gateway?",
+    "options": {
+      "A": "Allow inbound internet traffic to private subnets",
+      "B": "Allow private subnet instances to access the internet without being reachable from it",
+      "C": "Load balance traffic",
+      "D": "Encrypt data in transit"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 96,
+    "section": "AWS Cloud",
+    "question": "What is the difference between Security Groups and Network ACLs?",
+    "options": {
+      "A": "Security Groups are stateless, NACLs are stateful",
+      "B": "Security Groups are stateful and instance-level; NACLs are stateless and subnet-level",
+      "C": "They are identical",
+      "D": "NACLs are applied to instances"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 97,
+    "section": "AWS Cloud",
+    "question": "What is an Application Load Balancer (ALB)?",
+    "options": {
+      "A": "A Layer 4 load balancer",
+      "B": "A Layer 7 load balancer that routes based on HTTP content (URLs, headers, hostnames)",
+      "C": "A DNS service",
+      "D": "A database proxy"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 98,
+    "section": "AWS Cloud",
+    "question": "What is cross-zone load balancing?",
+    "options": {
+      "A": "Load balancing between AWS Regions",
+      "B": "Each LB node distributes traffic across targets in all enabled Availability Zones",
+      "C": "Load balancing between on-premises and cloud",
+      "D": "Distributing traffic by IP address only"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 99,
+    "section": "AWS Cloud",
+    "question": "What does an Auto Scaling Group (ASG) do?",
+    "options": {
+      "A": "Distributes traffic across instances",
+      "B": "Automatically launches or terminates EC2 instances to maintain desired capacity",
+      "C": "Manages DNS records",
+      "D": "Encrypts data at rest"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 100,
+    "section": "AWS Cloud",
+    "question": "In an ASG, what is the 'desired capacity'?",
+    "options": {
+      "A": "The maximum number of instances",
+      "B": "The target number of instances the ASG tries to maintain",
+      "C": "The minimum number of instances",
+      "D": "The number of failed instances"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 101,
+    "section": "AWS Cloud",
+    "question": "What is Amazon RDS?",
+    "options": {
+      "A": "A NoSQL database service",
+      "B": "A managed relational database service",
+      "C": "An object storage service",
+      "D": "A container orchestration service"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 102,
+    "section": "AWS Cloud",
+    "question": "What is the benefit of RDS Multi-AZ deployment?",
+    "options": {
+      "A": "Lower cost",
+      "B": "Automatic failover and data redundancy across Availability Zones",
+      "C": "Faster query performance",
+      "D": "More storage space"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 103,
+    "section": "AWS Cloud",
+    "question": "What is VPC Peering?",
+    "options": {
+      "A": "A transitive networking connection",
+      "B": "A direct, non-transitive networking connection between two VPCs using private IPs",
+      "C": "A public internet connection",
+      "D": "A type of load balancer"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 104,
+    "section": "AWS Cloud",
+    "question": "What is an AWS Transit Gateway?",
+    "options": {
+      "A": "A type of EC2 instance",
+      "B": "A central hub that connects multiple VPCs and on-premises networks",
+      "C": "A storage gateway",
+      "D": "A serverless compute service"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 105,
+    "section": "AWS Cloud",
+    "question": "What does IAM stand for in AWS?",
+    "options": {
+      "A": "Internet Access Management",
+      "B": "Identity and Access Management",
+      "C": "Infrastructure as a Module",
+      "D": "Integrated Application Monitor"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 106,
+    "section": "AWS Cloud",
+    "question": "Which EC2 pricing model offers the largest discount but can be interrupted?",
+    "options": {
+      "A": "On-Demand",
+      "B": "Reserved Instances",
+      "C": "Spot Instances",
+      "D": "Dedicated Hosts"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 107,
+    "section": "AWS Cloud",
+    "question": "What is the difference between synchronous and asynchronous replication in RDS?",
+    "options": {
+      "A": "They are the same",
+      "B": "Synchronous waits for replica confirmation before acknowledging; asynchronous responds immediately",
+      "C": "Asynchronous is always faster",
+      "D": "Synchronous is only for read replicas"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 108,
+    "section": "AWS Cloud",
+    "question": "What is EBS (Elastic Block Store)?",
+    "options": {
+      "A": "Object storage",
+      "B": "Block-level storage volumes attached to EC2 instances",
+      "C": "File storage shared across instances",
+      "D": "Archive storage"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 109,
+    "section": "AWS Cloud",
+    "question": "What is the difference between a Network Load Balancer and an Application Load Balancer?",
+    "options": {
+      "A": "NLB is Layer 7, ALB is Layer 4",
+      "B": "NLB operates at Layer 4 (TCP/UDP) without inspecting HTTP; ALB operates at Layer 7 (HTTP)",
+      "C": "They are identical",
+      "D": "ALB is for non-HTTP traffic"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 110,
+    "section": "AWS Cloud",
+    "question": "In a default VPC, what CIDR block is used?",
+    "options": {
+      "A": "10.0.0.0/16",
+      "B": "192.168.0.0/16",
+      "C": "172.31.0.0/16",
+      "D": "172.16.0.0/12"
+    },
+    "correct": "C"
+  }
+]

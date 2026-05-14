@@ -1,0 +1,742 @@
+FINAL EXAMINATION
+DevOps, Cloud Computing, Kubernetes, Terraform & Web Security
+Multiple Choice Questions (MCQ)
+Instructions: This exam contains 110 multiple-choice questions. Select the BEST answer for each
+question. Each question is worth 1 point. Total marks: 110. Good luck!
+Student Name: ______________________________ ID: ______________ Date: __________
+
+-- 1 of 19 --
+
+Section: DevOps & CI/CD
+1. What does DevOps combine?
+○ A) Development and Operations
+○ B) Design and Optimization
+○ C) Debugging and Outsourcing
+○ D) Deployment and Observation
+2. Which of the following is NOT a core DevOps principle?
+○ A) Automation of the SDLC
+○ B) Collaboration and communication
+○ C) Waterfall project management
+○ D) Continuous improvement and minimization of waste
+3. What does CI stand for in CI/CD?
+○ A) Continuous Inspection
+○ B) Continuous Integration
+○ C) Code Integration
+○ D) Centralized Infrastructure
+4. What is the main difference between Continuous Delivery and Continuous Deployment?
+○ A) Continuous Delivery is faster
+○ B) Continuous Deployment requires manual testing
+○ C) Continuous Delivery requires a manual approval to deploy to production
+○ D) There is no difference
+5. What does 'Shift Left' mean in DevOps?
+○ A) Move deployment earlier
+○ B) Shift security and testing earlier in the development process
+○ C) Move the development team to the left side of the office
+○ D) Shift from cloud to on-premises
+6. How does DevSecOps relate to DevOps?
+○ A) DevSecOps replaces DevOps entirely
+○ B) DevSecOps embeds security checks into every stage of the development lifecycle
+○ C) DevSecOps removes the need for testing
+○ D) DevSecOps only focuses on deployment security
+7. Before CI/CD, what was a common problem during code merging?
+○ A) Automated conflict resolution
+○ B) Big conflicts and broken builds from merging long-lived branches
+○ C) Instant deployment
+○ D) No need for testing
+8. What is a CI/CD Pipeline?
+○ A) A methodology for writing code
+○ B) A series of automatic steps that build, test, and deliver code
+
+-- 2 of 19 --
+
+○ C) A type of version control system
+○ D) A manual deployment checklist
+9. Which deployment strategy involves running the old and new versions simultaneously?
+○ A) Waterfall deployment
+○ B) Big bang deployment
+○ C) Blue-green deployment
+○ D) Manual deployment
+10. In a CI/CD pipeline, what happens in the 'Verify' phase?
+○ A) Code is deployed to production
+○ B) Code is tested to ensure correctness and quality standards
+○ C) Users are notified
+○ D) Servers are configured
+Section: Containers & Docker
+11. What is the main purpose of Docker?
+○ A) To virtualize different operating systems
+○ B) To containerize applications and ship them
+○ C) To replace virtual machines entirely
+○ D) To manage network infrastructure
+12. What do Docker containers share with the host?
+○ A) The entire operating system
+○ B) The OS kernel
+○ C) The application code
+○ D) The user interface
+13. Can you run a Windows-based container on a Linux Docker host?
+○ A) Yes, always
+○ B) Yes, with special plugins
+○ C) No, because they don't share the same kernel
+○ D) Yes, but only in production
+14. How do containers differ from Virtual Machines in terms of size?
+○ A) Containers are typically in Gigabytes
+○ B) Containers are typically in Megabytes, VMs in Gigabytes
+○ C) They are the same size
+○ D) VMs are smaller than containers
+15. What is a Docker image?
+○ A) A running container
+○ B) A package or template used to create containers
+○ C) A virtual machine snapshot
+
+-- 3 of 19 --
+
+○ D) A network configuration file
+16. Which Dockerfile instruction specifies the base image?
+○ A) RUN
+○ B) CMD
+○ C) FROM
+○ D) COPY
+17. What does the WORKDIR instruction do in a Dockerfile?
+○ A) Copies files to the container
+○ B) Sets the working directory inside the container
+○ C) Exposes a port
+○ D) Runs a command
+18. What is the difference between CMD and RUN in a Dockerfile?
+○ A) CMD runs during build, RUN runs at startup
+○ B) RUN executes during build, CMD specifies the default command at container startup
+○ C) They are identical
+○ D) CMD installs packages, RUN starts services
+19. What is Container Orchestration?
+○ A) Writing Dockerfiles
+○ B) Automatically deploying and managing containers at scale
+○ C) Creating Docker images
+○ D) Installing Docker on servers
+20. Which of the following is a container orchestration tool?
+○ A) Git
+○ B) Jenkins
+○ C) Kubernetes
+○ D) Ansible
+Section: Kubernetes
+21. What is the smallest deployable unit in Kubernetes?
+○ A) Container
+○ B) Node
+○ C) Pod
+○ D) Deployment
+22. What component in K8s architecture acts as the front-end for the cluster?
+○ A) ETCD
+○ B) Kubelet
+○ C) API Server
+○ D) Scheduler
+
+-- 4 of 19 --
+
+23. What is ETCD used for in Kubernetes?
+○ A) Container runtime
+○ B) Distributed reliable key-value store for cluster data
+○ C) Load balancing
+○ D) DNS resolution
+24. What does the Kubernetes Scheduler do?
+○ A) Monitors node health
+○ B) Distributes containers across multiple nodes
+○ C) Manages networking
+○ D) Stores cluster state
+25. What is the role of kubelet?
+○ A) It is the cluster's database
+○ B) It runs on each node and ensures containers are running as expected
+○ C) It balances network traffic
+○ D) It schedules pods
+26. Which Kubernetes Service type exposes a service only within the cluster?
+○ A) NodePort
+○ B) LoadBalancer
+○ C) ClusterIP
+○ D) ExternalName
+27. What is the valid port range for a NodePort service in Kubernetes?
+○ A) 1-1024
+○ B) 8000-9000
+○ C) 30000-32767
+○ D) 80-443
+28. What does Kubernetes Ingress manage?
+○ A) Internal pod-to-pod communication
+○ B) External HTTP/HTTPS access to services in the cluster
+○ C) Container image storage
+○ D) Node scaling
+29. Why is putting WordPress and MySQL in the same Pod considered an anti-pattern?
+○ A) They can't communicate over a network
+○ B) They need different scaling strategies and can work on different machines
+○ C) WordPress requires Windows
+○ D) MySQL doesn't run in containers
+30. What happens when a Liveness Probe fails repeatedly?
+○ A) The Pod is deleted
+○ B) The container is killed and restarted within the Pod
+○ C) Traffic is stopped
+○ D) The node is drained
+
+-- 5 of 19 --
+
+31. What happens when a Readiness Probe fails?
+○ A) The container is restarted
+○ B) The Pod is removed from Service load balancing but keeps running
+○ C) The node shuts down
+○ D) The Pod is deleted
+32. In Kubernetes resource management, what does 'requests' define?
+○ A) Maximum allowed CPU usage
+○ B) Minimum guaranteed resources used for scheduling
+○ C) Network bandwidth limits
+○ D) Storage capacity
+33. What happens when a container exceeds its memory limit?
+○ A) It is throttled
+○ B) It is killed (OOMKilled)
+○ C) Nothing happens
+○ D) It gets more memory automatically
+34. What is the purpose of a Kubernetes ConfigMap?
+○ A) To store encrypted secrets
+○ B) To store non-confidential configuration data as key-value pairs
+○ C) To define resource limits
+○ D) To manage container images
+35. How should data in a Kubernetes Secret be encoded?
+○ A) Plain text
+○ B) Base64 encoded
+○ C) SHA-256 hashed
+○ D) AES encrypted
+36. What does a ReplicaSet ensure?
+○ A) Each pod has unique configuration
+○ B) A stable set of a desired number of pods is always running
+○ C) Pods are deployed to specific nodes
+○ D) Network policies are enforced
+37. What does a Kubernetes Deployment manage that a ReplicaSet doesn't?
+○ A) Pod creation
+○ B) Rolling updates, rollbacks, and revision history
+○ C) Network routing
+○ D) Storage volumes
+38. Which kubectl command applies a declarative configuration file?
+○ A) kubectl run
+○ B) kubectl create
+○ C) kubectl apply -f
+○ D) kubectl exec
+
+-- 6 of 19 --
+
+Section: Terraform & IaC
+39. What is Infrastructure as Code (IaC)?
+○ A) Manually configuring servers
+○ B) Provisioning and managing infrastructure using code instead of manual configuration
+○ C) Writing application code
+○ D) Documenting infrastructure in spreadsheets
+40. What does 'idempotent' mean in the context of IaC?
+○ A) Running the script once produces errors
+○ B) Running the script multiple times always results in the same desired state
+○ C) The script can only run once
+○ D) The script modifies state randomly
+41. What is the difference between mutable and immutable infrastructure?
+○ A) There is no difference
+○ B) Mutable infrastructure is updated in place; immutable replaces servers with new ones
+○ C) Immutable infrastructure is always updated in place
+○ D) Mutable infrastructure cannot be changed
+42. Terraform uses which approach to define infrastructure?
+○ A) Imperative
+○ B) Procedural
+○ C) Declarative
+○ D) Object-oriented
+43. What language does Terraform use for configuration?
+○ A) YAML
+○ B) JSON only
+○ C) HCL (HashiCorp Configuration Language)
+○ D) Python
+44. What does 'terraform init' do?
+○ A) Deploys infrastructure
+○ B) Destroys resources
+○ C) Scans code, downloads provider plugins, and initializes the working directory
+○ D) Shows the execution plan
+45. What does 'terraform plan' do?
+○ A) Creates resources immediately
+○ B) Shows what changes Terraform will make without applying them
+○ C) Destroys all resources
+○ D) Downloads provider plugins
+46. In Terraform plan output, what does a plus sign (+) indicate?
+
+-- 7 of 19 --
+
+○ A) A resource will be deleted
+○ B) A resource will be modified
+○ C) A resource will be created
+○ D) A resource is unchanged
+47. What is the correct syntax for a Terraform resource block?
+○ A) resource "PROVIDER_TYPE" "NAME" { CONFIG }
+○ B) create "TYPE" "NAME" { CONFIG }
+○ C) deploy "PROVIDER" "TYPE" { CONFIG }
+○ D) instance "NAME" { CONFIG }
+48. What is a Terraform data source?
+○ A) A way to create new resources
+○ B) Read-only information fetched from the provider
+○ C) A database connection
+○ D) A log file
+49. How do you reference a variable in Terraform?
+○ A) ${variable_name}
+○ B) var.variable_name
+○ C) @variable_name
+○ D) $variable_name
+50. What is the purpose of Terraform output variables?
+○ A) To define input parameters
+○ B) To export useful information (like IP addresses) after apply
+○ C) To create resources
+○ D) To delete state files
+51. What is the default Terraform state file name?
+○ A) state.json
+○ B) terraform.tfstate
+○ C) main.tf
+○ D) terraform.lock.hcl
+52. Why is storing Terraform state in version control a bad idea?
+○ A) It's too large
+○ B) Manual errors, no locking, and secrets stored in plain text
+○ C) Git doesn't support JSON
+○ D) It's automatically backed up anyway
+53. What is a recommended remote backend for Terraform state?
+○ A) Local filesystem
+○ B) Git repository
+○ C) Amazon S3 with DynamoDB for locking
+○ D) Email attachment
+
+-- 8 of 19 --
+
+54. What is the primary key name required for a DynamoDB table used for Terraform state
+locking?
+○ A) StateID
+○ B) LockID
+○ C) TerraformLock
+○ D) lock_key
+55. What is a Terraform module?
+○ A) A single resource block
+○ B) A reusable, self-contained package of Terraform configuration
+○ C) A provider plugin
+○ D) A state file
+56. What is the typical file structure of a Terraform module?
+○ A) main.tf, variables.tf, outputs.tf
+○ B) index.js, package.json
+○ C) Dockerfile, docker-compose.yml
+○ D) app.py, requirements.txt
+57. What does the lifecycle setting 'create_before_destroy' do in Terraform?
+○ A) Deletes the resource first, then creates a new one
+○ B) Creates the replacement resource before deleting the old one
+○ C) Prevents any changes to the resource
+○ D) Skips the resource during apply
+Section: Web Application Security
+58. What is the fundamental security problem with web applications?
+○ A) Slow performance
+○ B) All user input is untrusted
+○ C) Too many features
+○ D) Expensive hosting
+59. What is SQL Injection?
+○ A) A method to optimize SQL queries
+○ B) An attack where malicious SQL is inserted into input fields to manipulate database queries
+○ C) A database backup technique
+○ D) A type of database encryption
+60. In SQL injection, what does the '--' sequence do?
+○ A) Starts a new query
+○ B) Acts as a comment, removing the rest of the query
+○ C) Encrypts the query
+○ D) Creates a new table
+61. What is the purpose of the UNION keyword in SQL injection attacks?
+
+-- 9 of 19 --
+
+○ A) To delete data
+○ B) To combine results from multiple SELECT queries to extract additional data
+○ C) To update records
+○ D) To create tables
+62. Why is NULL used when determining column count in UNION-based SQL injection?
+○ A) NULL is faster to process
+○ B) NULL is type-flexible and can fit into almost any column type
+○ C) NULL deletes data
+○ D) NULL is required by SQL syntax
+63. What is Out-of-Band SQL Injection?
+○ A) SQL injection via the URL
+○ B) Exploiting SQL injection by triggering network interactions (like DNS) to exfiltrate data
+○ C) SQL injection that crashes the server
+○ D) SQL injection in stored procedures only
+64. What is OS Command Injection?
+○ A) Installing malware via email
+○ B) Injecting shell commands through application inputs that are passed to system commands
+○ C) Brute forcing SSH passwords
+○ D) Modifying system configuration files directly
+65. In command injection, what does the '&' character do?
+○ A) Combines two strings
+○ B) Acts as a shell command separator to execute multiple commands
+○ C) Encrypts the command
+○ D) Redirects output to a file
+66. What is a Path Traversal attack?
+○ A) Navigating a website normally
+○ B) Using '../' sequences to access files outside the intended directory
+○ C) A type of network scanning
+○ D) A DoS attack
+67. What is SSRF (Server-Side Request Forgery)?
+○ A) A client-side scripting attack
+○ B) An attack that causes the server to make requests to unintended locations
+○ C) A database encryption method
+○ D) A password cracking technique
+68. In SSRF, why do applications trust requests from localhost (127.0.0.1)?
+○ A) Localhost is always secure
+○ B) Access controls may be bypassed for requests from the local machine
+○ C) Localhost has special encryption
+○ D) Localhost uses a different protocol
+69. What is Cross-Site Scripting (XSS)?
+
+-- 10 of 19 --
+
+○ A) Injecting SQL into a database
+○ B) Injecting malicious scripts into trusted websites that execute in victims' browsers
+○ C) A network protocol attack
+○ D) A server-side vulnerability only
+70. What are the three interrelated mechanisms for handling user access in web applications?
+○ A) Firewall, VPN, Encryption
+○ B) Authentication, Session Management, Access Control
+○ C) Login, Logout, Password Reset
+○ D) HTTP, HTTPS, SSH
+71. What is a session token?
+○ A) A permanent user identifier
+○ B) A unique string that maps to a user's session on the server
+○ C) A type of encryption key
+○ D) A database record
+72. What is 'salting' in password storage?
+○ A) Encrypting the entire database
+○ B) Adding a unique random string to each password before hashing
+○ C) Using a stronger hash algorithm
+○ D) Storing passwords in plain text with a label
+73. What is a Key Vault used for?
+○ A) Physical server security
+○ B) Managing secrets, encryption keys, passwords, and certificates with controlled access
+○ C) Load balancing
+○ D) DNS management
+74. What does TLS provide?
+○ A) Only encryption
+○ B) Data encryption, data integrity, and authentication
+○ C) Only authentication
+○ D) Only data integrity
+75. What is the purpose of a digital certificate?
+○ A) To encrypt data at rest
+○ B) To link a public key to an entity, verified by a trusted certificate authority
+○ C) To store passwords
+○ D) To configure firewalls
+76. Which of the following is NOT a recommended file upload mitigation?
+○ A) Check file extension
+○ B) Check MIME type against a whitelist
+○ C) Allow any file type and size
+○ D) Use antivirus scanning
+
+-- 11 of 19 --
+
+Section: AWS Cloud
+77. What is cloud computing?
+○ A) Hosting applications on your local machine
+○ B) On-demand delivery of IT resources over the internet with pay-as-you-go pricing
+○ C) Buying physical servers
+○ D) Using only open-source software
+78. Which cloud model uses dedicated resources for a single organization?
+○ A) Public cloud
+○ B) Hybrid cloud
+○ C) Private cloud
+○ D) Community cloud
+79. What is a hybrid cloud?
+○ A) A cloud only for startups
+○ B) A combination of public and private clouds with data/applications moving between them
+○ C) A cloud with no internet access
+○ D) A cloud that uses only Linux servers
+80. What does SaaS stand for?
+○ A) Storage as a Service
+○ B) Software as a Service
+○ C) Security as a Service
+○ D) Server as a Service
+81. In which cloud service model does the developer only focus on writing and deploying
+code?
+○ A) IaaS
+○ B) SaaS
+○ C) PaaS
+○ D) FaaS
+82. What is an AWS Region?
+○ A) A single data center
+○ B) A separate geographic area containing multiple Availability Zones
+○ C) A type of server
+○ D) A pricing model
+83. How many Availability Zones does each AWS Region have at minimum?
+○ A) 1
+○ B) 2
+○ C) 3
+○ D) 5
+84. What is Amazon EC2?
+○ A) A storage service
+
+-- 12 of 19 --
+
+○ B) A virtual machine in the cloud
+○ C) A database service
+○ D) A DNS service
+85. What is the hypervisor's role in EC2?
+○ A) Storing data
+○ B) Managing resource sharing and isolation between virtual machines
+○ C) Routing network traffic
+○ D) Encrypting data
+86. What type of EC2 instances are ideal for compute-intensive tasks?
+○ A) General purpose
+○ B) Memory optimized
+○ C) Compute optimized
+○ D) Storage optimized
+87. What is AWS Lambda?
+○ A) A virtual machine service
+○ B) A serverless compute service that runs code without managing servers
+○ C) A storage service
+○ D) A database service
+88. What is a Lambda 'cold start'?
+○ A) When Lambda runs out of memory
+○ B) Latency from creating a new execution environment for a Lambda function
+○ C) When Lambda crashes
+○ D) When Lambda is deleted
+89. What is the default concurrency limit for Lambda functions per Region?
+○ A) 100
+○ B) 500
+○ C) 1000
+○ D) 5000
+90. What is Amazon S3?
+○ A) A relational database
+○ B) An object storage service
+○ C) A compute service
+○ D) A networking service
+91. What is the maximum size of a single object in S3?
+○ A) 1 GB
+○ B) 5 GB
+○ C) 5 TB
+○ D) Unlimited
+92. Which S3 storage class is the lowest cost for archival?
+○ A) S3 Standard
+
+-- 13 of 19 --
+
+○ B) S3 Intelligent-Tiering
+○ C) S3 Glacier Deep Archive
+○ D) S3 One Zone-IA
+93. What is Amazon VPC?
+○ A) A compute service
+○ B) A logically isolated virtual network in AWS
+○ C) A database service
+○ D) A monitoring tool
+94. What makes a subnet 'public' in AWS?
+○ A) Having EC2 instances in it
+○ B) Its route table having a route to an Internet Gateway
+○ C) Having a public IP range
+○ D) Being in a specific Availability Zone
+95. What is the purpose of a NAT Gateway?
+○ A) Allow inbound internet traffic to private subnets
+○ B) Allow private subnet instances to access the internet without being reachable from it
+○ C) Load balance traffic
+○ D) Encrypt data in transit
+96. What is the difference between Security Groups and Network ACLs?
+○ A) Security Groups are stateless, NACLs are stateful
+○ B) Security Groups are stateful and instance-level; NACLs are stateless and subnet-level
+○ C) They are identical
+○ D) NACLs are applied to instances
+97. What is an Application Load Balancer (ALB)?
+○ A) A Layer 4 load balancer
+○ B) A Layer 7 load balancer that routes based on HTTP content (URLs, headers, hostnames)
+○ C) A DNS service
+○ D) A database proxy
+98. What is cross-zone load balancing?
+○ A) Load balancing between AWS Regions
+○ B) Each LB node distributes traffic across targets in all enabled Availability Zones
+○ C) Load balancing between on-premises and cloud
+○ D) Distributing traffic by IP address only
+99. What does an Auto Scaling Group (ASG) do?
+○ A) Distributes traffic across instances
+○ B) Automatically launches or terminates EC2 instances to maintain desired capacity
+○ C) Manages DNS records
+○ D) Encrypts data at rest
+100. In an ASG, what is the 'desired capacity'?
+○ A) The maximum number of instances
+
+-- 14 of 19 --
+
+○ B) The target number of instances the ASG tries to maintain
+○ C) The minimum number of instances
+○ D) The number of failed instances
+101. What is Amazon RDS?
+○ A) A NoSQL database service
+○ B) A managed relational database service
+○ C) An object storage service
+○ D) A container orchestration service
+102. What is the benefit of RDS Multi-AZ deployment?
+○ A) Lower cost
+○ B) Automatic failover and data redundancy across Availability Zones
+○ C) Faster query performance
+○ D) More storage space
+103. What is VPC Peering?
+○ A) A transitive networking connection
+○ B) A direct, non-transitive networking connection between two VPCs using private IPs
+○ C) A public internet connection
+○ D) A type of load balancer
+104. What is an AWS Transit Gateway?
+○ A) A type of EC2 instance
+○ B) A central hub that connects multiple VPCs and on-premises networks
+○ C) A storage gateway
+○ D) A serverless compute service
+105. What does IAM stand for in AWS?
+○ A) Internet Access Management
+○ B) Identity and Access Management
+○ C) Infrastructure as a Module
+○ D) Integrated Application Monitor
+106. Which EC2 pricing model offers the largest discount but can be interrupted?
+○ A) On-Demand
+○ B) Reserved Instances
+○ C) Spot Instances
+○ D) Dedicated Hosts
+107. What is the difference between synchronous and asynchronous replication in RDS?
+○ A) They are the same
+○ B) Synchronous waits for replica confirmation before acknowledging; asynchronous responds
+immediately
+○ C) Asynchronous is always faster
+○ D) Synchronous is only for read replicas
+108. What is EBS (Elastic Block Store)?
+
+-- 15 of 19 --
+
+○ A) Object storage
+○ B) Block-level storage volumes attached to EC2 instances
+○ C) File storage shared across instances
+○ D) Archive storage
+109. What is the difference between a Network Load Balancer and an Application Load
+Balancer?
+○ A) NLB is Layer 7, ALB is Layer 4
+○ B) NLB operates at Layer 4 (TCP/UDP) without inspecting HTTP; ALB operates at Layer 7
+(HTTP)
+○ C) They are identical
+○ D) ALB is for non-HTTP traffic
+110. In a default VPC, what CIDR block is used?
+○ A) 10.0.0.0/16
+○ B) 192.168.0.0/16
+○ C) 172.31.0.0/16
+○ D) 172.16.0.0/12
+
+-- 16 of 19 --
+
+ANSWER KEY
+DevOps & CI/CD
+1. A - Development and Operations
+2. C - Waterfall project management
+3. B - Continuous Integration
+4. C - Continuous Delivery requires a manual approval to deploy to production
+5. B - Shift security and testing earlier in the development process
+6. B - DevSecOps embeds security checks into every stage of the development lifecycle
+7. B - Big conflicts and broken builds from merging long-lived branches
+8. B - A series of automatic steps that build, test, and deliver code
+9. C - Blue-green deployment
+10. B - Code is tested to ensure correctness and quality standards
+Containers & Docker
+11. B - To containerize applications and ship them
+12. B - The OS kernel
+13. C - No, because they don't share the same kernel
+14. B - Containers are typically in Megabytes, VMs in Gigabytes
+15. B - A package or template used to create containers
+16. C - FROM
+17. B - Sets the working directory inside the container
+18. B - RUN executes during build, CMD specifies the default command at container startup
+19. B - Automatically deploying and managing containers at scale
+20. C - Kubernetes
+Kubernetes
+21. C - Pod
+22. C - API Server
+23. B - Distributed reliable key-value store for cluster data
+24. B - Distributes containers across multiple nodes
+25. B - It runs on each node and ensures containers are running as expected
+26. C - ClusterIP
+27. C - 30000-32767
+28. B - External HTTP/HTTPS access to services in the cluster
+29. B - They need different scaling strategies and can work on different machines
+30. B - The container is killed and restarted within the Pod
+31. B - The Pod is removed from Service load balancing but keeps running
+32. B - Minimum guaranteed resources used for scheduling
+33. B - It is killed (OOMKilled)
+34. B - To store non-confidential configuration data as key-value pairs
+35. B - Base64 encoded
+36. B - A stable set of a desired number of pods is always running
+37. B - Rolling updates, rollbacks, and revision history
+38. C - kubectl apply -f
+Terraform & IaC
+39. B - Provisioning and managing infrastructure using code instead of manual configuration
+40. B - Running the script multiple times always results in the same desired state
+41. B - Mutable infrastructure is updated in place; immutable replaces servers with new ones
+42. C - Declarative
+43. C - HCL (HashiCorp Configuration Language)
+
+-- 17 of 19 --
+
+44. C - Scans code, downloads provider plugins, and initializes the working directory
+45. B - Shows what changes Terraform will make without applying them
+46. C - A resource will be created
+47. A - resource "PROVIDER_TYPE" "NAME" { CONFIG }
+48. B - Read-only information fetched from the provider
+49. B - var.variable_name
+50. B - To export useful information (like IP addresses) after apply
+51. B - terraform.tfstate
+52. B - Manual errors, no locking, and secrets stored in plain text
+53. C - Amazon S3 with DynamoDB for locking
+54. B - LockID
+55. B - A reusable, self-contained package of Terraform configuration
+56. A - main.tf, variables.tf, outputs.tf
+57. B - Creates the replacement resource before deleting the old one
+Web Application Security
+58. B - All user input is untrusted
+59. B - An attack where malicious SQL is inserted into input fields to manipulate database queries
+60. B - Acts as a comment, removing the rest of the query
+61. B - To combine results from multiple SELECT queries to extract additional data
+62. B - NULL is type-flexible and can fit into almost any column type
+63. B - Exploiting SQL injection by triggering network interactions (like DNS) to exfiltrate data
+64. B - Injecting shell commands through application inputs that are passed to system commands
+65. B - Acts as a shell command separator to execute multiple commands
+66. B - Using '../' sequences to access files outside the intended directory
+67. B - An attack that causes the server to make requests to unintended locations
+68. B - Access controls may be bypassed for requests from the local machine
+69. B - Injecting malicious scripts into trusted websites that execute in victims' browsers
+70. B - Authentication, Session Management, Access Control
+71. B - A unique string that maps to a user's session on the server
+72. B - Adding a unique random string to each password before hashing
+73. B - Managing secrets, encryption keys, passwords, and certificates with controlled access
+74. B - Data encryption, data integrity, and authentication
+75. B - To link a public key to an entity, verified by a trusted certificate authority
+76. C - Allow any file type and size
+AWS Cloud
+77. B - On-demand delivery of IT resources over the internet with pay-as-you-go pricing
+78. C - Private cloud
+79. B - A combination of public and private clouds with data/applications moving between them
+80. B - Software as a Service
+81. C - PaaS
+82. B - A separate geographic area containing multiple Availability Zones
+83. C - 3
+84. B - A virtual machine in the cloud
+85. B - Managing resource sharing and isolation between virtual machines
+86. C - Compute optimized
+87. B - A serverless compute service that runs code without managing servers
+88. B - Latency from creating a new execution environment for a Lambda function
+89. C - 1000
+90. B - An object storage service
+91. C - 5 TB
+92. C - S3 Glacier Deep Archive
+93. B - A logically isolated virtual network in AWS
+
+-- 18 of 19 --
+
+94. B - Its route table having a route to an Internet Gateway
+95. B - Allow private subnet instances to access the internet without being reachable from it
+96. B - Security Groups are stateful and instance-level; NACLs are stateless and subnet-level
+97. B - A Layer 7 load balancer that routes based on HTTP content (URLs, headers, hostnames)
+98. B - Each LB node distributes traffic across targets in all enabled Availability Zones
+99. B - Automatically launches or terminates EC2 instances to maintain desired capacity
+100. B - The target number of instances the ASG tries to maintain
+101. B - A managed relational database service
+102. B - Automatic failover and data redundancy across Availability Zones
+103. B - A direct, non-transitive networking connection between two VPCs using private IPs
+104. B - A central hub that connects multiple VPCs and on-premises networks
+105. B - Identity and Access Management
+106. C - Spot Instances
+107. B - Synchronous waits for replica confirmation before acknowledging; asynchronous responds
+immediately
+108. B - Block-level storage volumes attached to EC2 instances
+109. B - NLB operates at Layer 4 (TCP/UDP) without inspecting HTTP; ALB operates at Layer 7 (HTTP)
+110. C - 172.31.0.0/16
+
+-- 19 of 19 --
+

@@ -1,0 +1,227 @@
+EECE 430 — Software Engineering
+Final Examination
+Name: ____________________________________ Date: ___________________
+Student ID: _______________________________ Section: _________________
+Instructions:
+• This exam contains 33 multiple-choice questions.
+• Time allowed: 1 hour.
+• Circle the letter of the best answer for each question.
+• Each question is worth equal marks.
+• No electronic devices, notes, or textbooks are permitted.
+1. Which of the following best describes why agile methods propose constant code refactoring?
+A) To ensure all documentation is kept up to date
+B) To make future changes easier since they cannot be reliably anticipated
+C) To eliminate the need for software testing
+D) To increase the number of features delivered per sprint
+2. In Test-Driven Development (TDD), what happens immediately AFTER a developer writes a new test?
+A) The developer refactors existing code
+B) The developer runs the test, which is expected to fail because the functionality is not yet implemented
+C) The developer writes documentation for the new functionality
+D) The developer merges the code into the main branch
+3. A team uses the Fibonacci scale for story point estimation. Two team members estimate a user story
+as 2 and 13 respectively. According to agile estimation practices, what should happen next?
+A) Average the two estimates and assign 7.5 story points
+B) Use the higher estimate to be safe
+C) Discuss the disagreement further, as the large gap suggests different understandings of the story
+D) Assign the story to the person who estimated 2 since they are likely more skilled
+4. Which statement about pair programming is INCORRECT?
+A) Pairs are created dynamically so all team members work with each other
+B) It develops common ownership of code and spreads knowledge across the team
+C) It is always less efficient than two programmers working separately
+D) It serves as an informal review process since each line of code is seen by more than one person
+5. Which of the following is a limitation of Test-Driven Development?
+A) It does not produce any form of system documentation
+B) It eliminates the need for regression testing
+C) Some tests can be very difficult to write incrementally, and it is hard to judge test completeness
+D) It prevents developers from writing automated tests
+6. In Scrum, what is the PRIMARY purpose of the daily scrum (stand-up) meeting?
+A) To assign tasks to individual developers for the day
+B) To share information, review progress, and identify problems so the team can re-plan short-term work
+C) To demonstrate completed features to the Product Owner
+D) To refine and estimate product backlog items
+7. A Scrum team has a velocity of 21 story points per sprint. During sprint planning, the Product Owner
+wants to include PBIs totaling 35 story points. What should happen?
+
+-- 1 of 5 --
+
+A) The team should extend the sprint length to accommodate all 35 points
+B) The team should commit to 35 points and work overtime if needed
+C) The team should select approximately 21 points of PBIs based on priority, and return the rest to the
+backlog
+D) The ScrumMaster should override the velocity estimate and accept all items
+8. Which of the following is TRUE about Extreme Programming (XP)?
+A) XP mandates that increments are delivered to customers every 6 months
+B) XP requires that all tests must pass for every build, and the build is only accepted if tests run
+successfully
+C) XP discourages pair programming in favor of individual code ownership
+D) XP was designed to integrate easily with traditional management practices in most organizations
+9. A Product Backlog Item (PBI) that is described as a high-level idea that may radically change or may
+not be included in the final product is in which state?
+A) Ready for implementation
+B) Ready for refinement
+C) Ready for consideration
+D) Ready for deployment
+10. Which of the following is NOT one of the top 5 benefits of Scrum mentioned in the course?
+A) Unstable requirements do not hold up progress
+B) The product is broken down into understandable chunks for stakeholders
+C) It eliminates the need for a product backlog
+D) Team communication is improved and everyone can see everything
+11. An architect must optimize a system for BOTH maintainability and performance. Why is this
+inherently challenging?
+A) Maintainability requires a centralized architecture while performance requires distribution
+B) Maintainability favors fine-grained, replaceable components, but many components communicating
+slows the system down
+C) Performance and maintainability both require the same architectural choices
+D) Maintainability can only be achieved in layered architectures
+12. In a multi-tier client-server architecture, which tier is responsible for implementing
+application-specific logic as well as information storage and retrieval requests?
+A) The web server tier
+B) The database server tier
+C) The application server tier
+D) The client tier
+13. A team is designing a system where large volumes of information are generated by various software
+tools (e.g., code editors, debuggers, report generators) and must be shared among them. Which
+architectural pattern is MOST appropriate?
+A) Pipe and Filter
+B) Client-Server
+C) Repository
+D) MVC
+14. Which statement about the pipe and filter architectural pattern is FALSE?
+A) It is commonly used in batch data processing applications
+B) Each filter carries out one type of data transformation
+C) It is highly suitable for interactive systems
+D) Evolution by adding transformations is straightforward
+
+-- 2 of 5 --
+
+15. In a service-oriented architecture, services are described as 'stateless.' What does this mean and
+why is it important?
+A) Services do not store any data at all, reducing storage costs
+B) Services do not maintain internal state, allowing them to be replicated and migrated between servers
+C) Services cannot access databases, ensuring complete independence
+D) Services must restart from scratch after every request, improving security
+16. A SaaS provider needs to allow different business customers to add custom fields to the shared
+database schema. Using the 'additional fields' approach, what is a key problem?
+A) It requires each customer to have their own database instance
+B) It is difficult to know how many extra columns to include, and different customers may need different
+data types
+C) It eliminates the ability to use tenant identifiers
+D) It prevents any form of database extensibility
+17. Which of the following is an advantage of multi-tenant databases over multi-instance databases?
+A) Complete data isolation between customers
+B) Flexibility to customize database schemas per customer
+C) Easier update management since only a single instance needs updating
+D) Stronger resilience because a failure affects only one customer
+18. A company is choosing between deploying their SaaS product on containers vs. virtual machines.
+Which scenario BEST justifies using containers?
+A) The system requires complete hardware-level isolation between tenants
+B) Users work independently with little data sharing, and services need to scale rapidly with minimal
+overhead
+C) The system needs to run different operating systems for different services
+D) The company prefers slower but more secure deployment
+19. In cloud computing, what is the key difference between scalability and elasticity?
+A) Scalability refers to handling more users; elasticity refers to handling fewer users
+B) Scalability is the ability to cope with increasing load; elasticity also includes the ability to scale DOWN
+as demand decreases
+C) They are identical concepts with different names
+D) Elasticity only applies to private clouds while scalability applies to public clouds
+20. Which of the following is NOT a SaaS design issue discussed in the course?
+A) Local vs. remote processing trade-offs
+B) Authentication and federated identity
+C) Choosing between compiled and interpreted programming languages
+D) Information leakage between organizations in multi-tenant systems
+21. In continuous integration, what is the recommended 'integrate twice' approach to avoid breaking the
+build?
+A) Push code to two separate repositories simultaneously
+B) Integrate and test locally on your own machine first, then push to the shared repository
+C) Have two different team members review the code before pushing
+D) Run integration tests twice on the CI server for redundancy
+22. Which of the following correctly describes the relationship between continuous delivery and
+continuous deployment?
+A) They are the same thing with different names
+B) Continuous delivery tests the system in a production-replica environment; continuous deployment
+automatically releases it to users
+C) Continuous deployment tests the system; continuous delivery releases it
+D) Continuous delivery only applies to containerized applications
+
+-- 3 of 5 --
+
+23. A build system checks the modification timestamps of source files and compiled files. If the source
+file's timestamp is NEWER than the compiled file's timestamp, what does the build system do?
+A) It does nothing because the compiled code is up to date
+B) It recompiles the source file to create an updated compiled version
+C) It deletes the compiled file and alerts the developer
+D) It reverts the source file to match the compiled version
+24. Which characteristic of Infrastructure as Code ensures that infrastructure changes can be rolled
+back if problems arise?
+A) Visibility
+B) Reproducibility
+C) Recovery — infrastructure models can be versioned and stored in a code management system
+D) Reliability
+25. According to the IBM DevOps metrics scorecard, which combination of metric trends indicates a
+healthy DevOps process?
+A) Increasing failed deployments, decreasing deployment frequency
+B) Decreasing failed deployments, decreasing mean time to recovery, increasing deployment frequency
+C) Stable deployment frequency, increasing lead time from development to deployment
+D) Decreasing customer numbers, increasing availability
+26. A microservice is described as having 'high cohesion and low coupling.' Which of the following
+violates BOTH of these principles?
+A) A payment service that handles only payment processing with its own database
+B) A service that handles user registration, email notifications, and report generation, and directly
+accesses three other services' databases
+C) A service that communicates with other services only through a message broker
+D) A service that manages password creation, validation, recovery, and storage
+27. A microservices system uses eventual consistency. Which statement BEST describes how this
+works?
+A) All database replicas are always perfectly synchronized at all times
+B) Database changes are recorded in a pending updates log; other service instances read the log, update
+their databases, and confirm the update
+C) A central coordinator locks all databases during updates to prevent inconsistency
+D) Each service ignores data from other services to maintain independence
+28. What problem do circuit breakers solve in a microservices architecture that simple timeouts do not?
+A) Circuit breakers encrypt service communications to prevent attacks
+B) Circuit breakers immediately deny access to a failed service, avoiding the delay that timeouts cause on
+every call to a failed service
+C) Circuit breakers eliminate the need for error handling in individual services
+D) Circuit breakers allow services to share databases more efficiently
+29. In the context of microservice coordination, what is the key disadvantage of choreography
+compared to orchestration?
+A) Choreography requires a central controller that becomes a bottleneck
+B) Choreography is harder to debug because there is no central point that tracks the workflow state
+C) Choreography does not support asynchronous communication
+D) Choreography requires all services to use the same programming language
+30. An attacker uses a cross-site scripting (XSS) attack to steal a session cookie from a victim's
+browser. The attacker then uses this cookie to access the victim's account. This SECOND attack is an
+example of:
+A) SQL injection
+B) Brute force attack
+
+-- 4 of 5 --
+
+C) Session hijacking
+D) Denial of service
+31. A system implements a policy that locks user accounts after 5 failed login attempts. Why can this
+security measure itself become a vulnerability?
+A) Because it makes brute force attacks easier
+B) Because attackers can intentionally trigger lockouts to deny legitimate users access (user lockout
+attack)
+C) Because it eliminates the need for strong passwords
+D) Because it conflicts with multi-factor authentication
+32. In the context of data encryption, which statement about 'data at rest' vs. 'data in use' is CORRECT?
+A) Data at rest should remain unencrypted for faster access; data in use should always be encrypted
+B) Files storing data at rest should be encrypted; encrypting data in use slows response time and makes
+general search impossible
+C) Both data at rest and data in use should never be encrypted to maintain performance
+D) Data at rest encryption uses asymmetric keys while data in use encryption uses symmetric keys
+exclusively
+33. According to data protection principles covered in the course, which of the following is a
+VIOLATION of proper data handling?
+A) Allowing users to discover what personal data is stored about them
+B) Storing user data in a country with weaker data protection laws without an agreement to uphold
+stronger rules
+C) Deleting personal data when a user deletes their account
+D) Obtaining user consent before disclosing their data to other people
+— END OF EXAM —
+
+-- 5 of 5 --
+

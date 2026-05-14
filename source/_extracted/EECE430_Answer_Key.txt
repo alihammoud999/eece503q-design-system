@@ -1,0 +1,60 @@
+EECE 430 — Final Exam Answer Key
+Quick Reference:
+Q Ans Q Ans Q Ans
+1. B 2. B 3. C
+4. C 5. C 6. B
+7. C 8. B 9. C
+10. C 11. B 12. C
+13. C 14. C 15. B
+16. B 17. C 18. B
+19. B 20. C 21. B
+22. B 23. B 24. C
+25. B 26. B 27. B
+28. B 29. B 30. C
+31. B 32. B 33. B
+Detailed Explanations:
+1. B — Refactoring makes future changes easier since changes cannot be reliably anticipated.
+2. B — In TDD, after writing a test you run it expecting failure since the functionality isn't implemented yet.
+3. C — A big disagreement (2 vs 13) means the team should discuss further, as there are different
+understandings of the story.
+4. C — Evidence suggests a pair may be MORE efficient, not less. It is not always less efficient.
+5. C — TDD limitations include difficulty writing incremental tests and judging test completeness.
+6. B — Daily scrums are for sharing info, reviewing progress, and identifying problems for short-term
+replanning.
+7. C — The team should select ~21 points based on priority and velocity. Sprints are not extended.
+8. B — XP requires all tests must pass for every build; the build is only accepted if tests run successfully.
+9. C — Ready for consideration: high-level ideas that may radically change or be excluded.
+10. C — Scrum does not eliminate the product backlog — the backlog is central to Scrum.
+11. B — Maintainability needs fine-grained components; but inter-component communication hurts
+performance.
+12. C — The application server handles application-specific logic and storage/retrieval requests.
+13. C — Repository pattern: tools share data through a central repository (e.g., an IDE).
+14. C — Pipe and filter is NOT suitable for interactive systems.
+15. B — Stateless means no internal state, enabling replication and migration between servers.
+16. B — Hard to predict how many extra columns are needed, and customers may need different data types.
+17. C — Multi-tenant: easier update management — update one instance and all customers get it.
+18. B — Containers excel at rapid scaling with minimal overhead for independent, lightweight services.
+19. B — Scalability handles increasing load; elasticity also includes scaling down when demand decreases.
+20. C — Programming language choice is not a SaaS design issue discussed in the course.
+
+-- 1 of 2 --
+
+21. B — Integrate and test locally first, then push to the shared repository to trigger CI.
+22. B — Delivery = tested in production replica and ready. Deployment = automatically released to users.
+23. B — Newer source timestamp means changes were made, so the build system recompiles.
+24. C — Recovery: versioned infrastructure models in code management allow rollback to working versions.
+25. B — Healthy DevOps: fewer failed deployments, faster recovery, more frequent deployments.
+26. B — Handling unrelated responsibilities (low cohesion) AND accessing other services' databases (high
+coupling).
+27. B — Eventual consistency uses a pending updates log that replicas read, apply, and confirm.
+28. B — Circuit breakers immediately block calls to failed services, avoiding per-call timeout delays.
+29. B — Choreography is harder to debug because no central point tracks the overall workflow state.
+30. C — Using a stolen session cookie to impersonate a user is session hijacking.
+31. B — Attackers can deliberately trigger lockouts to deny access to legitimate users.
+32. B — Data at rest should be encrypted; data in use encryption slows performance and prevents general
+search.
+33. B — Storing data in a country with weaker laws without an agreement violates data protection principles.
+— END OF ANSWER KEY —
+
+-- 2 of 2 --
+
