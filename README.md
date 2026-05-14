@@ -10,6 +10,7 @@ A static exam-prep web app for EECE 503Q. It includes the main multiple-choice q
 - `added-exams-data.js` - added MCQs and subjective model answers from:
   - `Final_Exam_Comprehensive.pdf`
   - `Final_Exam_v2.pdf`
+- `extreme-questions-data.js` - standalone 50-question extremely difficult MCQ challenge.
 - `exam.jsx` - shared React quiz interface.
 - `source/` - source PDFs and extracted text used to build the question bank.
 - `uploads/` - uploaded exam material.
@@ -41,4 +42,5 @@ http://127.0.0.1:5173/EECE%20503Q%20Exam.html
 - Progress is stored locally in the browser.
 - The app loads React and Babel from CDN links, so an internet connection is needed for first load unless those scripts are cached.
 - The added final exams appear as separate cards under "Added exams".
+- The 50 extremely difficult MCQs appear in their own standalone section and are not mixed into the normal question bank.
 - Subjective questions and model answers are available from the "Subjective answers" button.

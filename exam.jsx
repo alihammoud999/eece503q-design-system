@@ -48,6 +48,8 @@ const SUBJECTIVE_BANK = (typeof window !== "undefined" && window.SUBJECTIVE_QUES
   || ((typeof SUBJECTIVE_QUESTIONS !== "undefined") ? SUBJECTIVE_QUESTIONS : []);
 const ADDED_EXAM_SETS = (typeof window !== "undefined" && window.EXAM_SETS)
   || ((typeof EXAM_SETS !== "undefined") ? EXAM_SETS : []);
+const EXTREME_BANK = (typeof window !== "undefined" && window.EXTREME_QUESTIONS)
+  || ((typeof EXTREME_QUESTIONS !== "undefined") ? EXTREME_QUESTIONS : []);
 
 /* ---------- helpers ---------- */
 
@@ -203,8 +205,8 @@ function App() {
     return () => clearInterval(id);
   }, [view]);
 
-  const startExam = useCallback(({ count, sectionFilter, difficulty, sourceFilter, label, immediateFeedback, preserveOrder }) => {
-    let pool = QUESTIONS;
+  const startExam = useCallback(({ count, sectionFilter, difficulty, sourceFilter, customQuestions, label, immediateFeedback, preserveOrder }) => {
+    let pool = customQuestions || QUESTIONS;
     if (sectionFilter) pool = pool.filter(q => q.s === sectionFilter);
     if (sourceFilter) pool = pool.filter(q => q.src === sourceFilter);
     if (difficulty === "hard")     pool = pool.filter(q => q.d === "h");
@@ -221,6 +223,7 @@ function App() {
       questions: prepared,
       sectionFilter,
       sourceFilter,
+      customSet: customQuestions ? label : null,
       difficulty: difficulty || "mixed",
       immediateFeedback: !!immediateFeedback,
       preserveOrder: !!preserveOrder,
@@ -300,6 +303,7 @@ function App() {
         count: examConfig.questions.length,
         sectionFilter: examConfig.sectionFilter,
         sourceFilter: examConfig.sourceFilter,
+        customQuestions: examConfig.customSet === "Extremely Difficult MCQs" ? EXTREME_BANK : null,
         difficulty: examConfig.difficulty,
         label: examConfig.label,
         immediateFeedback: examConfig.immediateFeedback,
@@ -430,6 +434,30 @@ function Home({ themeProps, onStart, onSubjective, resumeState, onResume }) {
               </button>
             ))}
           </div>
+        </section>
+      )}
+
+      {EXTREME_BANK.length > 0 && (
+        <section className="exam-additions extreme-additions">
+          <div className="section-title-row">
+            <div>
+              <div className="section-eyebrow">Standalone challenge</div>
+              <h2>Extremely Difficult MCQs</h2>
+            </div>
+          </div>
+          <button className="exam-mode-card extreme-mode-card"
+            onClick={() => onStart({
+              count: EXTREME_BANK.length,
+              customQuestions: EXTREME_BANK,
+              label: "Extremely Difficult MCQs",
+              immediateFeedback,
+              preserveOrder: true,
+            })}>
+            <div className="mode-count">{EXTREME_BANK.length}</div>
+            <div className="mode-label">Extreme Lab Challenge</div>
+            <div className="mode-desc">50 advanced MCQs in their own set</div>
+            <div className="mode-hint">Terraform, EKS, CI/CD, Docker, Swarm, AWS routing, and security edge cases.</div>
+          </button>
         </section>
       )}
 

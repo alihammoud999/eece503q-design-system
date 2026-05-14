@@ -412,6 +412,18 @@
       border-color: var(--rule-2);
       background: var(--paper-2);
     }
+    .extreme-additions {
+      margin-top: 0;
+      border-top-color: var(--bad-bd);
+    }
+    .extreme-mode-card {
+      width: 100%;
+      border-color: var(--bad-bd);
+    }
+    .extreme-mode-card .mode-count,
+    .extreme-mode-card .mode-label {
+      color: var(--bad);
+    }
 
     .row-center {
       display: flex;
@@ -1188,16 +1200,17 @@
 
   <script src="questions-data.js"></script>
   <script src="added-exams-data.js"></script>
+  <script src="extreme-questions-data.js"></script>
   <script>
     window.COURSE_CONFIG = {
       name: "EECE 503Q",
       displayTitle: "DevOps, Cloud<br/>&amp; Web Security",
-      subtitle: "205 MCQs plus 22 subjective answers, drawn from the course finals and lecture material.",
+      subtitle: "205 MCQs plus 22 subjective answers, with a separate 50-question extreme challenge.",
       storageKey: "eece503q-exam-state-v1",
       themeKey: "eece503q-theme",
       footnote: "Questions sourced from the official final PDFs + lecture material.",
     };
   </script>
-  <script type="text/babel" src="exam.jsx?v=2"></script>
+  <script type="text/babel" src="exam.jsx?v=3"></script>
 </body>
 </html>
